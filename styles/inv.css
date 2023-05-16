@@ -1,0 +1,28 @@
+.mc-inv-border {
+    --slot-size: 80px;
+    --inv-color: var(--def-inv-color);
+    background-color: var(--inv-color);
+    box-sizing: border-box;
+    padding: calc(var(--slot-size) * 0.1) calc(var(--slot-size) * 0.25) calc(var(--slot-size) * 0.9);
+    overflow: hidden;
+    box-shadow: 
+        inset calc(var(--slot-size) * 0.1) calc(var(--slot-size) * 0.1) 0 rgba(255, 255, 255, 0.5),
+        inset calc(var(--slot-size) * -0.1) calc(var(--slot-size) * -0.1) 0 rgba(0, 0, 0, 0.7)
+        ;
+}
+.mc-inv-border::before {
+    display: block;
+    content: attr(data-title);
+    font-family: "minecraft";
+    font-size: calc(var(--slot-size) * 0.5);
+    color: var(--def-gray-color);
+    text-align: center;
+    margin-bottom: calc(var(--slot-size) * 0.25);
+}
+
+.mc-inv-border > .mc-inv-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--slot-size) * 0.2);
+}

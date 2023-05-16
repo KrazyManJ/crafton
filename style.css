@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "minecraft";
+    src: url("assets/mcfont.otf");
+}
+
+:root {
+    --def-inv-color: #c7c7c7;
+    --def-slot-color: #8b8b8b;
+    --def-gray-color: #404040;
+    --def-slot-size: 80px
+}
+
+body {
+    margin: 0 50px;
+    background: rgb(103, 103, 103);
+}
+
+body > * {
+    margin: 30px 0;
+}
+
+img {
+    image-rendering: pixelated;
+    aspect-ratio: 1/1;
+}
+
+
+

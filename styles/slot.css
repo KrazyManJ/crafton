@@ -1,0 +1,180 @@
+.mc-item-slot {
+    --slot-size: var(--def-slot-size);
+    --slot-color: var(--def-slot-color);
+    position: relative;
+    width: var(--slot-size);
+    height: var(--slot-size);
+    background-color: var(--slot-color);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    box-shadow: 
+        inset calc(var(--slot-size) * 0.05) calc(var(--slot-size) * 0.05) 0 rgba(0, 0, 0, 0.7), 
+        inset calc(var(--slot-size) * -0.05) calc(var(--slot-size) * -0.05) 0 rgba(255, 255, 255, 0.8);
+}
+
+.mc-item-slot:hover::before {
+    width: 90%;
+    height: 90%;
+    content: "";
+    display: block;
+    background-color: rgba(255, 255, 255, 0.454);
+    position: absolute;
+    z-index: 1;
+}
+
+.mc-item-slot > img {
+    --slot-size: var(--def-slot-size);
+    width: calc(var(--slot-size) * 0.9);
+    image-rendering: pixelated;
+    user-select: none;
+}
+
+/* LABEL */
+
+.mc-item-slot[data-amount]::after {
+    content: attr(data-amount);
+    position: absolute;
+    color: white;
+    font-family: "minecraft";
+    font-size: calc(var(--slot-size) * 0.5);
+    bottom: 0;
+    right: 0;
+    line-height: calc(var(--slot-size) * 0.4);
+    text-shadow: calc(var(--slot-size) * 0.05) calc(var(--slot-size) * 0.05) 0 rgba(0, 0, 0, 0.7);
+}
+
+
+.mc-item-slot.model .block-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transform: rotateX(-30deg) rotateY(45deg);
+    transform-style: preserve-3d;
+    perspective: 3000px;
+    position: relative;
+    /* animation: spin infinite 4s linear; */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(-30deg) rotateY(135deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(495deg);
+    }
+}
+
+.mc-item-slot.model img {
+    position: absolute;
+    width: calc(var(--slot-size) * 0.54);
+    user-select: none;
+}
+
+.mc-item-slot.model .right-side {
+    filter: brightness(50%);
+}
+.mc-item-slot.model .left-side {
+    filter: brightness(70%);
+}
+
+/* BLOCK */
+
+.mc-item-slot.block .top-side {
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27));
+}
+.mc-item-slot.block .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+}
+.mc-item-slot.block .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27));
+}
+
+/* SLAB */
+
+.mc-item-slot.slab .top-side {
+    transform: rotateX(90deg);
+}
+
+.mc-item-slot.slab :is(.right-side,.left-side){
+    clip-path: inset(50% 0 0 0);
+}
+
+.mc-item-slot.slab .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+}
+
+.mc-item-slot.slab .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27));
+}
+
+/* STAIRS */
+
+.mc-item-slot.stairs .top-side {
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27));
+    clip-path: inset(0 0 0 50%);
+}
+
+.mc-item-slot.stairs .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+    clip-path: polygon(0 50%, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);
+}
+.mc-item-slot.stairs .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27));
+    clip-path: inset(50% 0 0 0);
+}
+
+.mc-item-slot.stairs .mid-hor {
+    transform: rotateX(90deg);
+    clip-path: inset(0 50% 0 0);
+}
+
+.mc-item-slot.stairs .mid-vert {
+    transform: rotateY(-90deg);
+    clip-path: inset(0 0 50% 0);
+    filter: brightness(70%);
+}
+
+/* PLATE */
+
+.mc-item-slot.plate .top-side {
+    transform: rotateX(90deg);
+}
+
+.mc-item-slot.plate :is(.right-side,.left-side){
+    clip-path: inset(50% 0 30% 0);
+}
+
+.mc-item-slot.plate .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+}
+
+.mc-item-slot.plate .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27));
+}
+
+/* CHEST */
+
+.mc-item-slot.chest .top-side {
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27 * (14/16)));
+}
+.mc-item-slot.chest .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27 * (14/16)));
+}
+.mc-item-slot.chest .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27 * (14/16)));
+}
+
+.mc-item-slot.chest .lock-top {
+    clip-path: inset(0 0 68.75% 0);
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27 * (6/16))) translateY(calc(var(--slot-size) * 0.27 * (22/16)));
+}
+.mc-item-slot.chest .lock-right {
+    clip-path: inset(31.25% 0 0 43.75%);
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+}
+.mc-item-slot.chest .lock-left {
+    clip-path: inset(0 56.25% 0 0);
+    transform: rotateY(-90deg) translateX(calc(var(--slot-size) * 0.27 * (18/16))) translateZ(calc(var(--slot-size) * 0.27 * (2/16)));
+}
