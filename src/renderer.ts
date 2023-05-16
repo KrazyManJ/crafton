@@ -1,5 +1,12 @@
 import RecipeRegistry, { Item } from "./recipe-registry.js"
-import { minecraftColorsToHTML } from "./utils.js"
+import { createEl, minecraftColorsToHTML } from "./utils.js"
+import * as vanilla_renderer from "./item-rendering/vanilla-renderer.js"
+
+
+export interface ItemRenderer {
+    preserve3d: boolean
+    callback: (item: Item) => Node | Node[]
+}
 
 export default class Renderer {
     private static readonly TOOLTIP = document.getElementById("tooltip")
@@ -29,6 +36,19 @@ export default class Renderer {
 
     /* RENDERING */
 
+    private static readonly itemRenderers: Record<string,ItemRenderer> = {
+        "item": vanilla_renderer.ITEM,
+        "block": vanilla_renderer.BLOCK_LIKE_ITEM,
+        "slab": vanilla_renderer.BLOCK_LIKE_ITEM,
+        "stairs": vanilla_renderer.STAIRS,
+        "plate": vanilla_renderer.BLOCK_LIKE_ITEM,
+        "chest": vanilla_renderer.CHEST
+    }
+
+    static registerItemRenderer(id: string, renderer: ItemRenderer){
+        this.itemRenderers[id] = renderer
+    }
+
     static renderItemStack(id: string, amount = 1, size: number = undefined): HTMLElement {
         if (!RecipeRegistry.getAllItemIds().includes(id)) throw new Error("This was not found")
         const item = RecipeRegistry.getItemById(id)
@@ -39,56 +59,43 @@ export default class Renderer {
 		if (size) elem.setAttribute("style","--slot-size: "+size+"px")
         if (amount > 1 && amount <= 64) elem.dataset["amount"] = Math.round(amount).toString()
 
-
-        const BLOCK_MAP = {
-            "top-side": "top",
-            "right-side": "right",
-            "left-side": "left",
-            "mid-hor": "top",
-            "mid-vert": "left",
-            "lock-left": "lock",
-            "lock-right": "lock",
-            "lock-top": "lock"
+        if (!Object.keys(this.itemRenderers).includes(item.type)) {
+            console.warn(`Renderer not found for type "${item.type}". Skipped rendering!`)
+            return elem
         }
 
-		if (["block","slab","stairs","plate","chest"].includes(item.type)){
-			elem.classList.add(item.type,"model");
-			const wrapper = elem.appendChild(document.createElement("div"))
-			wrapper.className = "block-wrapper";
-            const sides = ["top-side","right-side","left-side"]
-            if (item.type === "stairs") sides.push("mid-hor","mid-vert")
-            else if (item.type === "chest") sides.push("lock-left","lock-right","lock-top")
-			sides.forEach(cls => {
-				const img = document.createElement("img")
-				img.className = cls
-				img.src = "data:image/png;base64,"+(typeof item.img === "object" ? item.img[BLOCK_MAP[cls]] : item.img)
-				wrapper.appendChild(img)
-			});
-		}
-		else if (item.type === "item") {
-			const itemImg = document.createElement("img")
-			itemImg.src = "data:image/png;base64,"+item.img
-			elem.appendChild(itemImg)
-		}
-        
-		
-		return elem
+        const renderer = this.itemRenderers[item.type]
+        const appenders = renderer.callback(item)
+
+        if (renderer.preserve3d) {
+            elem.classList.add(item.type,"model")
+            
+            createEl("div",{cls:"block-wrapper",parent:elem}).append(...(Array.isArray(appenders) ? appenders : [appenders]))
+        }
+        else elem.append(...(Array.isArray(appenders) ? appenders : [appenders]))
+        return elem
     }
 
     static renderEmptyContainer(title: string) {
-        const elem = document.createElement("div")
-        elem.className = "mc-inv-border"
-        elem.dataset["title"] = title
-        const innerCtr = document.createElement("div")
-        innerCtr.className = "mc-inv-container"
-        elem.appendChild(innerCtr)
-        return { elem: elem, container: innerCtr }
+        const ctr = createEl("div",{
+            cls: "mc-inv-container",
+        })
+        const elem = createEl("div", {
+            cls: "mc-inv-border",
+            attribs: {
+                "data-title": title
+            },
+            children: [
+                ctr
+            ]
+        })
+        return { elem: elem, container: ctr }
     }
 
 	static renderEmptySlot(size: number = undefined){
-		const elem = document.createElement("div")
-		elem.className = "mc-item-slot"
-		if (size) elem.setAttribute("style","--slot-size: "+size+"px")
-		return elem
+        return createEl("div",{
+            cls: "mc-item-slot",
+            attribs: size ? {"--slot-size": size+"px"} : {}
+        })
 	}
 }

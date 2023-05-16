@@ -1,4 +1,6 @@
-import { RECIPE_MAP } from "./map.js"
+import CurareMixRecipe from "./recipe/curare-mix-recipe.js"
+import ShapedRecipe from "./recipe/shaped-recipe.js"
+import ShapelessRecipe from "./recipe/shapeless-recipe.js"
 
 
 export interface Recipe {
@@ -34,15 +36,25 @@ export interface NonSerialized {
 
 export default class RecipeRegistry {
 
+    private static readonly recipeMap: Record<string, RecipeSerializer> = {
+        "minecraft:shaped_crafting": ShapedRecipe,
+        "minecraft:shapeless_crafting": ShapelessRecipe,
+        "tropicraft:curare_mix": CurareMixRecipe,
+    }
+
     private static readonly items: Record<string,Item> = {}
     private static readonly recipes: Recipe[] = []
     private static readonly displayNames: Record<string,string> = {}
+
+    static registerRecipeClass(type: string, clazz: RecipeSerializer) {
+        this.recipeMap[type] = clazz
+    }
 
     static async registerJsonFile(path: string){
         return fetch(path).then(r => r.json()).then((j: object) => {
             this.displayNames[j["id"]] = j["displayName"] 
             Object.entries(j["items"]).forEach(([key,value]:[string,Item]) => this.items[key] = value);
-            (j["recipes"] as NonSerialized[]).forEach(d => this.recipes.push(new RECIPE_MAP[d["type"]](d["data"])))
+            (j["recipes"] as NonSerialized[]).forEach(d => this.recipes.push(new this.recipeMap[d["type"]](d["data"])))
         })
     }
 

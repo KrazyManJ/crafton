@@ -22,7 +22,6 @@ async function LoadPage(){
 					.filter(id => id.startsWith(cat))
 					.map(id => Renderer.renderItemStack(id))
 			})
-			
 		})
 		RecipeRegistry.getAllRecipes().forEach(r => document.body.appendChild(r.draw()))
 	})
