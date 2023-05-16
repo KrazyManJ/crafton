@@ -1,5 +1,5 @@
-import RecipeRegistry from "./src/recipe-registry.js"
-import Renderer from "./src/renderer.js"
+import RecipeRegistry from "./recipe-registry.js"
+import Renderer from "./renderer.js"
 
 
 async function LoadPage(){
