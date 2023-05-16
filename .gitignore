@@ -9,3 +9,5 @@
 
 # Items data
 recipes/generator/data
+
+**/__pycache__

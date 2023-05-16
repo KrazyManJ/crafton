@@ -10,7 +10,7 @@ null = None
 RECIPES = {
     "tropicraft": [
         Recipe.shaped("tropicraft:bamboo_stick",4,"tropicraft:bamboo_chute",None,None,"tropicraft:bamboo_chute",None,None,None,None,None),
-        Recipe.shaped("tropicraft:bamboo_mug",4,
+        Recipe.shaped("tropicraft:bamboo_mug",1,
             "tropicraft:bamboo_chute",
             null,
             "tropicraft:bamboo_chute",
