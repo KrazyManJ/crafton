@@ -84,7 +84,7 @@ export default class RecipeRegistry {
         return Object.values(this.recipes).filter(r => r.ingredients().includes(id))
     }
 
-    static getRecipesByUsage(id: string){
+    static getRecipesByResult(id: string){
         return Object.values(this.recipes).filter(r => r.results().includes(id))
     }
 }

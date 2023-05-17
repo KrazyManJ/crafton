@@ -19,9 +19,8 @@ body > * {
     margin: 30px 0;
 }
 
-img {
+img, canvas {
     image-rendering: pixelated;
-    aspect-ratio: 1/1;
 }
 
 

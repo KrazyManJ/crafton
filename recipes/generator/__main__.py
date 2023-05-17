@@ -1,7 +1,7 @@
 from file_listener import FileListener
 import os
 from item_creator import createItemsByID
-from recipe_creator import Recipe
+from recipe_creator import Recipe, RecipeTemplate
 import sys
 import json
 
@@ -9,8 +9,22 @@ null = None
 
 RECIPES = {
     "tropicraft": {
-        "tropicraft:bamboo_stick": Recipe.shaped("tropicraft:bamboo_stick",4,"tropicraft:bamboo_chute",null,null,"tropicraft:bamboo_chute",null,null,null,null,null),
-        "tropicraft:bamboo_mug": Recipe.shaped("tropicraft:bamboo_mug",1,"tropicraft:bamboo_chute",null,"tropicraft:bamboo_chute","tropicraft:bamboo_chute",null,"tropicraft:bamboo_chute","tropicraft:bamboo_chute","tropicraft:bamboo_chute","tropicraft:bamboo_chute"),
+        
+        "tropicraft:block_azurite": RecipeTemplate.block("tropicraft:block_azurite",1,"tropicraft:azurite"),
+        "tropicraft:block_eudialyte": RecipeTemplate.block("tropicraft:block_eudialyte",1,"tropicraft:eudialyte"),
+        
+        # BAMBOO
+        
+        "tropicraft:bamboo_chest": RecipeTemplate.chest("tropicraft:bamboo_chest",1,"tropicraft:bamboo_chute"),
+        "tropicraft:bamboo_bundle": RecipeTemplate.smallblock("tropicraft:bamboo_bundle",1,"tropicraft:bamboo_chute"),
+        "tropicraft:bamboo_slab": Recipe.shapeless("tropicraft:bamboo_slab",1,"tropicraft:bamboo_bundle"),
+        "tropicraft:bamboo_stick": RecipeTemplate.stick("tropicraft:bamboo_stick",4,"tropicraft:bamboo_chute"),
+        "tropicraft:bamboo_mug": RecipeTemplate.cauldron("tropicraft:bamboo_mug",1,"tropicraft:bamboo_chute"),
+        "tropicraft:bamboo_stairs_0": Recipe.shaped("tropicraft:bamboo_stairs",1,"tropicraft:bamboo_chute",null,null,"tropicraft:bamboo_chute","tropicraft:bamboo_chute",null,null,null,null),
+        "tropicraft:bamboo_stairs_1": Recipe.shaped("tropicraft:bamboo_stairs",4,"tropicraft:bamboo_bundle",null,null,"tropicraft:bamboo_bundle","tropicraft:bamboo_bundle",null,null,null,null),
+        
+        # CHAIR + UMBRELLA
+        
         "tropicraft:chair_blue": Recipe.shaped(f"tropicraft:chair_blue",1,"tropicraft:bamboo_stick","minecraft:light_blue_wool","tropicraft:bamboo_stick","tropicraft:bamboo_stick","minecraft:light_blue_wool","tropicraft:bamboo_stick","tropicraft:bamboo_stick","minecraft:light_blue_wool","tropicraft:bamboo_stick"),
         "tropicraft:umbrella_blue": Recipe.shaped("tropicraft:umbrella_blue",1,"minecraft:light_blue_wool","minecraft:light_blue_wool","minecraft:light_blue_wool",null,"tropicraft:bamboo_stick",null,null,"tropicraft:bamboo_stick",null),
         "tropicraft:chair_green": Recipe.shaped(f"tropicraft:chair_green",1,"tropicraft:bamboo_stick","minecraft:lime_wool","tropicraft:bamboo_stick","tropicraft:bamboo_stick","minecraft:lime_wool","tropicraft:bamboo_stick","tropicraft:bamboo_stick","minecraft:lime_wool","tropicraft:bamboo_stick"),
@@ -67,5 +81,6 @@ def updateJSONs():
 
 if __name__ == '__main__':
     updateJSONs()
+    sys.exit()
     FileListener(os.path.join(__file__,os.pardir),updateJSONs).start()
 

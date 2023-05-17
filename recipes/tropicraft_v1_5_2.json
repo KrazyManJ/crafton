@@ -2,6 +2,122 @@
     "id": "tropicraft",
     "displayName": "Tropicraft",
     "recipes": {
+        "tropicraft:block_azurite": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:block_azurite",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:azurite",
+                        "tropicraft:azurite",
+                        "tropicraft:azurite"
+                    ],
+                    [
+                        "tropicraft:azurite",
+                        "tropicraft:azurite",
+                        "tropicraft:azurite"
+                    ],
+                    [
+                        "tropicraft:azurite",
+                        "tropicraft:azurite",
+                        "tropicraft:azurite"
+                    ]
+                ]
+            }
+        },
+        "tropicraft:block_eudialyte": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:block_eudialyte",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:eudialyte",
+                        "tropicraft:eudialyte",
+                        "tropicraft:eudialyte"
+                    ],
+                    [
+                        "tropicraft:eudialyte",
+                        "tropicraft:eudialyte",
+                        "tropicraft:eudialyte"
+                    ],
+                    [
+                        "tropicraft:eudialyte",
+                        "tropicraft:eudialyte",
+                        "tropicraft:eudialyte"
+                    ]
+                ]
+            }
+        },
+        "tropicraft:bamboo_chest": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:bamboo_chest",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:bamboo_chute",
+                        "tropicraft:bamboo_chute",
+                        "tropicraft:bamboo_chute"
+                    ],
+                    [
+                        "tropicraft:bamboo_chute",
+                        null,
+                        "tropicraft:bamboo_chute"
+                    ],
+                    [
+                        "tropicraft:bamboo_chute",
+                        "tropicraft:bamboo_chute",
+                        "tropicraft:bamboo_chute"
+                    ]
+                ]
+            }
+        },
+        "tropicraft:bamboo_bundle": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:bamboo_bundle",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:bamboo_chute",
+                        "tropicraft:bamboo_chute",
+                        null
+                    ],
+                    [
+                        "tropicraft:bamboo_chute",
+                        "tropicraft:bamboo_chute",
+                        null
+                    ],
+                    [
+                        null,
+                        null,
+                        null
+                    ]
+                ]
+            }
+        },
+        "tropicraft:bamboo_slab": {
+            "type": "minecraft:shapeless_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:bamboo_slab",
+                    "amount": 1
+                },
+                "matrix": [
+                    "tropicraft:bamboo_bundle"
+                ]
+            }
+        },
         "tropicraft:bamboo_stick": {
             "type": "minecraft:shaped_crafting",
             "data": {
@@ -50,6 +166,58 @@
                         "tropicraft:bamboo_chute",
                         "tropicraft:bamboo_chute",
                         "tropicraft:bamboo_chute"
+                    ]
+                ]
+            }
+        },
+        "tropicraft:bamboo_stairs_0": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:bamboo_stairs",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:bamboo_chute",
+                        null,
+                        null
+                    ],
+                    [
+                        "tropicraft:bamboo_chute",
+                        "tropicraft:bamboo_chute",
+                        null
+                    ],
+                    [
+                        null,
+                        null,
+                        null
+                    ]
+                ]
+            }
+        },
+        "tropicraft:bamboo_stairs_1": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:bamboo_stairs",
+                    "amount": 4
+                },
+                "matrix": [
+                    [
+                        "tropicraft:bamboo_bundle",
+                        null,
+                        null
+                    ],
+                    [
+                        "tropicraft:bamboo_bundle",
+                        "tropicraft:bamboo_bundle",
+                        null
+                    ],
+                    [
+                        null,
+                        null,
+                        null
                     ]
                 ]
             }

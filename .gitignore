@@ -4,9 +4,6 @@
 # PyCharm
 .idea
 
-# Javascript files
-**/*.js
-
 # Items data
 recipes/generator/data
 

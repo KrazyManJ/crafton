@@ -108,4 +108,16 @@ export default class Renderer {
             attribs: size ? {"--slot-size": size+"px"} : {}
         })
 	}
+
+    static renderArrow(){
+        const canvas = createEl("canvas",{
+            attribs: { width: "23", height: "23" },
+            css: { height: "var(--def-slot-size)" }
+        })
+        const ctx = canvas.getContext("2d")
+        ctx.fillStyle = "#8B8B8B"
+        ctx.fillRect(0,10,canvas.width-1,3)
+        for (let i = 0; i < 8; i++) ctx.fillRect(canvas.width-1-i,11-i,1,1+i*2)
+        return canvas
+    }
 }

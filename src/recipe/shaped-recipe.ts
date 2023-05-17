@@ -26,11 +26,7 @@ export default class ShapedRecipe implements Recipe {
 			children: this.matrix.flat().map(i => i ? Renderer.renderItemStack(i) : Renderer.renderEmptySlot())
 		})
 
-		createEl("img",{
-            attribs: { src: "./assets/arrow.png" },
-            css: { height: "var(--def-slot-size)" },
-            parent: containerEl.container
-        })
+		containerEl.container.append(Renderer.renderArrow())
 
         containerEl.container.appendChild(Renderer.renderItemStack(this.result.id,{
 			amount: this.result.amount,

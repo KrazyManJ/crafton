@@ -31,11 +31,7 @@ export default class ShapelessRecipe implements Recipe {
 			]
 		})
 
-		createEl("img",{
-            attribs: { src: "./assets/arrow.png" },
-            css: { height: "var(--def-slot-size)" },
-            parent: containerEl.container
-        })
+		containerEl.container.append(Renderer.renderArrow())
 		
         containerEl.container.appendChild(Renderer.renderItemStack(this.result.id,{
 			amount: this.result.amount,

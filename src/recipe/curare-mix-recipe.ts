@@ -21,11 +21,7 @@ export default class CurareMixRecipe implements Recipe {
             parent: containerEl.container
         })
 
-        createEl("img",{
-            attribs: { src: "./assets/arrow.png" },
-            css: { height: "var(--def-slot-size)" },
-            parent: containerEl.container
-        })
+        containerEl.container.append(Renderer.renderArrow())
         containerEl.container.appendChild(Renderer.renderItemStack(this.resultId,{
 			amount: 1,
 			size: 100
