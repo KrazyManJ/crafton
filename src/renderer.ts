@@ -8,6 +8,11 @@ export interface ItemRenderer {
     callback: (item: Item) => Node | Node[]
 }
 
+interface ItemRenderOptions {
+    amount?: number
+    size?: number
+}
+
 export default class Renderer {
     private static readonly TOOLTIP = document.getElementById("tooltip")
 
@@ -49,15 +54,20 @@ export default class Renderer {
         this.itemRenderers[id] = renderer
     }
 
-    static renderItemStack(id: string, amount = 1, size: number = undefined): HTMLElement {
+    static renderItemStack(id: string, options?: ItemRenderOptions): HTMLElement {
         if (!RecipeRegistry.getAllItemIds().includes(id)) throw new Error("This was not found")
         const item = RecipeRegistry.getItemById(id)
         const elem = document.createElement("div")
         elem.onmouseenter = () => this.itemMouseOver(item,id,RecipeRegistry.getAddonDisplayName(id.split(":")[0]))
         elem.onmouseleave = () => this.itemMouseLeave()
         elem.className = "mc-item-slot"
-		if (size) elem.setAttribute("style","--slot-size: "+size+"px")
-        if (amount > 1 && amount <= 64) elem.dataset["amount"] = Math.round(amount).toString()
+        if (options) {
+            if (options.size) elem.setAttribute("style","--slot-size: "+options.size+"px")
+            if (options.amount){
+                if (options.amount > 1 && options.amount <= 64) elem.dataset["amount"] = Math.round(options.amount).toString()
+            }
+        }
+        
 
         if (!Object.keys(this.itemRenderers).includes(item.type)) {
             console.warn(`Renderer not found for type "${item.type}". Skipped rendering!`)

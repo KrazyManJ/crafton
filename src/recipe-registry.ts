@@ -43,7 +43,7 @@ export default class RecipeRegistry {
     }
 
     private static readonly items: Record<string,Item> = {}
-    private static readonly recipes: Recipe[] = []
+    private static readonly recipes: Record<string,Recipe> = {}
     private static readonly displayNames: Record<string,string> = {}
 
     static registerRecipeClass(type: string, clazz: RecipeSerializer) {
@@ -53,8 +53,10 @@ export default class RecipeRegistry {
     static async registerJsonFile(path: string){
         return fetch(path).then(r => r.json()).then((j: object) => {
             this.displayNames[j["id"]] = j["displayName"] 
-            Object.entries(j["items"]).forEach(([key,value]:[string,Item]) => this.items[key] = value);
-            (j["recipes"] as NonSerialized[]).forEach(d => this.recipes.push(new this.recipeMap[d["type"]](d["data"])))
+            Object.entries(j["items"]).forEach(([key, value]: [string, Item]) => this.items[key] = value);
+            Object.entries(j["recipes"]).forEach(([key, value]:[string, NonSerialized]) => 
+                this.recipes[key] = new this.recipeMap[value["type"]](value["data"])
+            )
         })
     }
 
@@ -63,15 +65,15 @@ export default class RecipeRegistry {
     }
 
     static getAllRecipes(): Recipe[] {
-        return this.recipes
+        return Object.values(this.recipes)
     }
 
     static getAllItems(): Item[] {
-        return Object.keys(this.items).sort().map((key) => this.items[key])
+        return this.getAllItemIds().map((key) => this.items[key])
     }
 
     static getAllItemIds(): string[] {
-        return Object.keys(this.items).sort()
+        return Object.keys(this.items).sort((a,b) => a.localeCompare(b,'en',{numeric:true}))
     }
 
     static getAddonDisplayName(id: string) {
@@ -79,10 +81,10 @@ export default class RecipeRegistry {
     }
 
     static getRecipesByIngredients(id: string){
-        return this.recipes.filter(r => r.ingredients().includes(id))
+        return Object.values(this.recipes).filter(r => r.ingredients().includes(id))
     }
 
     static getRecipesByUsage(id: string){
-        return this.recipes.filter(r => r.results().includes(id))
+        return Object.values(this.recipes).filter(r => r.results().includes(id))
     }
 }

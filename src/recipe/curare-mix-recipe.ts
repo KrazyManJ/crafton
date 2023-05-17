@@ -26,7 +26,10 @@ export default class CurareMixRecipe implements Recipe {
             css: { height: "var(--def-slot-size)" },
             parent: containerEl.container
         })
-        containerEl.container.appendChild(Renderer.renderItemStack(this.resultId,1,100))
+        containerEl.container.appendChild(Renderer.renderItemStack(this.resultId,{
+			amount: 1,
+			size: 100
+		}))
         
         return containerEl.elem
     }

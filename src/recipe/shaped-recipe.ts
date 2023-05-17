@@ -32,7 +32,10 @@ export default class ShapedRecipe implements Recipe {
             parent: containerEl.container
         })
 
-        containerEl.container.appendChild(Renderer.renderItemStack(this.result.id,this.result.amount,100))
+        containerEl.container.appendChild(Renderer.renderItemStack(this.result.id,{
+			amount: this.result.amount,
+			size: 100
+		}))
 
 		return containerEl.elem
 	}

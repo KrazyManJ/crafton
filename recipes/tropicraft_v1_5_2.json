@@ -1,8 +1,8 @@
 {
     "id": "tropicraft",
     "displayName": "Tropicraft",
-    "recipes": [
-        {
+    "recipes": {
+        "tropicraft:bamboo_stick": {
             "type": "minecraft:shaped_crafting",
             "data": {
                 "result": {
@@ -28,7 +28,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:bamboo_mug": {
             "type": "minecraft:shaped_crafting",
             "data": {
                 "result": {
@@ -54,7 +54,59 @@
                 ]
             }
         },
-        {
+        "tropicraft:chair_blue": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:chair_blue",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:light_blue_wool",
+                        "tropicraft:bamboo_stick"
+                    ],
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:light_blue_wool",
+                        "tropicraft:bamboo_stick"
+                    ],
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:light_blue_wool",
+                        "tropicraft:bamboo_stick"
+                    ]
+                ]
+            }
+        },
+        "tropicraft:umbrella_blue": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:umbrella_blue",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "minecraft:light_blue_wool",
+                        "minecraft:light_blue_wool",
+                        "minecraft:light_blue_wool"
+                    ],
+                    [
+                        null,
+                        "tropicraft:bamboo_stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "tropicraft:bamboo_stick",
+                        null
+                    ]
+                ]
+            }
+        },
+        "tropicraft:chair_green": {
             "type": "minecraft:shaped_crafting",
             "data": {
                 "result": {
@@ -80,7 +132,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:umbrella_green": {
             "type": "minecraft:shaped_crafting",
             "data": {
                 "result": {
@@ -106,7 +158,163 @@
                 ]
             }
         },
-        {
+        "tropicraft:chair_purple": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:chair_purple",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:purple_wool",
+                        "tropicraft:bamboo_stick"
+                    ],
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:purple_wool",
+                        "tropicraft:bamboo_stick"
+                    ],
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:purple_wool",
+                        "tropicraft:bamboo_stick"
+                    ]
+                ]
+            }
+        },
+        "tropicraft:umbrella_purple": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:umbrella_purple",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "minecraft:purple_wool",
+                        "minecraft:purple_wool",
+                        "minecraft:purple_wool"
+                    ],
+                    [
+                        null,
+                        "tropicraft:bamboo_stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "tropicraft:bamboo_stick",
+                        null
+                    ]
+                ]
+            }
+        },
+        "tropicraft:chair_red": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:chair_red",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:red_wool",
+                        "tropicraft:bamboo_stick"
+                    ],
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:red_wool",
+                        "tropicraft:bamboo_stick"
+                    ],
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:red_wool",
+                        "tropicraft:bamboo_stick"
+                    ]
+                ]
+            }
+        },
+        "tropicraft:umbrella_red": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:umbrella_red",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "minecraft:red_wool",
+                        "minecraft:red_wool",
+                        "minecraft:red_wool"
+                    ],
+                    [
+                        null,
+                        "tropicraft:bamboo_stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "tropicraft:bamboo_stick",
+                        null
+                    ]
+                ]
+            }
+        },
+        "tropicraft:chair_yellow": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:chair_yellow",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:yellow_wool",
+                        "tropicraft:bamboo_stick"
+                    ],
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:yellow_wool",
+                        "tropicraft:bamboo_stick"
+                    ],
+                    [
+                        "tropicraft:bamboo_stick",
+                        "minecraft:yellow_wool",
+                        "tropicraft:bamboo_stick"
+                    ]
+                ]
+            }
+        },
+        "tropicraft:umbrella_yellow": {
+            "type": "minecraft:shaped_crafting",
+            "data": {
+                "result": {
+                    "id": "tropicraft:umbrella_yellow",
+                    "amount": 1
+                },
+                "matrix": [
+                    [
+                        "minecraft:yellow_wool",
+                        "minecraft:yellow_wool",
+                        "minecraft:yellow_wool"
+                    ],
+                    [
+                        null,
+                        "tropicraft:bamboo_stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "tropicraft:bamboo_stick",
+                        null
+                    ]
+                ]
+            }
+        },
+        "tropicraft:enc_tropica": {
             "type": "minecraft:shaped_crafting",
             "data": {
                 "result": {
@@ -132,7 +340,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_confusion": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_confusion",
@@ -143,7 +351,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_harm": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_harm",
@@ -160,7 +368,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_hunger_0": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_hunger",
@@ -171,7 +379,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_hunger_1": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_hunger",
@@ -182,7 +390,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_hunger_2": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_hunger",
@@ -193,7 +401,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_slow_down": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_slow_down",
@@ -204,7 +412,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_poison_0": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_poison",
@@ -216,7 +424,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_poison_1": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_poison",
@@ -228,7 +436,7 @@
                 ]
             }
         },
-        {
+        "tropicraft:curare_weakness": {
             "type": "tropicraft:curare_mix",
             "data": {
                 "result": "tropicraft:curare_weakness",
@@ -239,8 +447,13 @@
                 ]
             }
         }
-    ],
+    },
     "items": {
+        "tropicraft:azurite": {
+            "name": "Azurite",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBQ3IZUBkLgAAAIhSURBVDjLzZM5bBNhEIW/fw/vrs/EsUPiGBoroUAGKQLKAKahQLKgQBGFqVPSINGloKKgRUKiSUEBFQ2igJQUUKYAgUgUZa2YGOMcXu96r5/CkASRVDRMN/NmnmbmzcA/mjgOmL/blgCuF/Hy8cSxecpRwTsPdmRxdoTL86Pksjr1hZb8jdUXWvKwfyTBdtPFbboIXSAy2n681rDliaJBacKk1rAlgHa4sNawZW7KIt4OAHj3qof+i6DWsOXMxTzTVYOpceg+GeZoh4vHxwxSisCaSbPbGmBvumRSGrmszuSZLNNVgy8rAz58dXC96ICgvtCSlqlSqGbRLAWvE+D7MWZOJ2GpAPQ3XNaCmM3PPfackOWlsgBQaw1bjhcM8udyVM+qnCwK2o6CiCTCjcmYKt3tAJlQcHohkR/z+mlpXxVRv/ddFqcsjLTGoD0gCCW6JtDSGmEvpPdtQCKhEOsCzVJxdoazv3hYEABKZW6s0P60R7Dep73eJz1pEuqC/obL9KzJSCWF78dkSyZXriXJ6n8Kpzy6Ljp7Tog3iLl6a5RYhXjLxzQU1tZjKqd1UkmVyIlo/pDM3cz8fUjLS2Xh+zFvn3dxOz7lC2kql9KcKgtW3uwShJLWqkM+r9LaijESB13sy+h6EZap4tkeq7aHkhtC0hCkSybnJ5J0mgEf3/cZ+PHRv3B7sSsBgn60v6Qb9ztSi4aXqydVni2OCv4r+wlBPtjA9yhohwAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
         "tropicraft:bamboo_bundle": {
             "name": "Bamboo Bundle",
             "img": {
@@ -265,6 +478,16 @@
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90DGRUBFWbuc6UAAAF3SURBVDjLpdPNSsNAFIbhNyZpbA1U/EFFxaq40LpQkCIIruw1uHft2p2XIF6CF+JGBEEK/iC0VKRBaW1NS9raJK2mSlyIwWCsAWc9z8yZOd+Bfy4h7MaFlWkXoOu8cZ+reK4vDD482nGV/ghmo82L7ZBYmnBDH7B/sO1G4zK7e1uMTAwC8GI7XkV9f+HJ2U/Usjusbs54h3Sdt94VfMeFxyq1psn4dJzFtSniwwOIkgiAFISX1+d9GMDQbUpaE0EAXCjclAQAMejmfK5M5kxjOKF6uPpoocYV7m7K5C8evC6IQWWnNubInGnc3xoMjsQwm6+0LYeHfI3sueZrvfjbm4fGVIp3BnrJJKYqGE8mlyf5H7kRgzBATI0gKzJ13aKum1yd3gaGTkqlkz8/rGrzbHR47bwTUSSuf8G+LnzhSrFFrWwiIFDXLTLH2Z5x9+WgWGhg6BZyRAqFvWFKpZPu/PIobatLdEBGy9ZCYd80ptJJb0DCYoAPmyOyUGP+5NkAAAAASUVORK5CYII=",
             "type": "item"
         },
+        "tropicraft:bamboo_door": {
+            "name": "Bamboo Door",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EChAmHt2+/sIAAAGHSURBVDjLrZOxS8NAGMV/rQltjrTFLhYy2UVwUXQSuji6iIOIk+AiiFA6in9A6Sj+CU4iDiqIg0MX/wEXoYtOgXYRjSHXmmvjEFIaY3TQm+59d7x733vfwR9XZhJcXuwEpVKeZqtNo15DCB0Az/M5PrnnYH+Fjc3TTCrb5cVOMIlvrnaDr+fra/OxWnYS6PpUjPD45D6GS6V84lFtEgih077bCyLZQugcHa6Osef5TGnZdIJmq8321gIA0lY4bp+imcewwmtn5w+YIkdqC416jV7HpddxMSyNmTkTw9LodVykrTg6XGWoRukKAKpLZZQa8frUx3H7ePKD2cVyqvEJgkIhh+MMmF2exnEGABSLoexu1/2doNt9R9qKZ/eFopmP+VCtln82MTLPsDQMTKStmJkzx3WqyRay3+UubQUwdj9KpNlqJ0xMpGBYGoalIW2FtFUskUa99vsgVSoFhNDxKuEgRQP19tbH94cJDxIfY31tPsgZIe9AKqK98kPpQzXi+vYxw3+tTxlkoMVplbluAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:bamboo_itemframe": {
+            "name": "Bamboo Item Frame",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QcVFRAFl9ZZqQAAAkhJREFUOMvNkctOEwEUhr/pTIeZdjq90YsU4yBajYRCdIFAXKASMXFlfAffRB/A+A4muiMhJCbGiEFQg0K5BjBVoAULpXR6Z6Z1obZx487Ef3nOyZ/zfz/8S8Xj8WY8Hm/+7UYAePL0YTMS1bEsm2Kx2lqGQh4AslkTTVOwLTDNMh6Pi9WVHR4/ei5IAKIo8OLZJJVKlYnxASanF7hgdFGrNcifFPHoHRxmC9wcu8LU9CLhsI9g2ABAAvB4XNy7O0i9ZuHWnPRd6mFxaRuXS0WWRdL7RxjdMZyyyK2xfiTJQc5U2gamWebThy3ujF8mlcqR6I/icokMJGL4vArH+QqW3cApOrDqxxhGgPefK20DgMx+jlQqhyDAUjJNcnmH2bkNurpCZNKHXLvaS1MAhwAvX63TG+8DwNEC1unj3fw21VObjc00/oCGqrqp12w6Q35W1nbpjvlIJr8hy3ILtOM3A1X5OfTrv7JJAuVyiUKhgNMp0mjY+HUVpyzi9Sq4VKVtYJplcvkiicRZQiGN0eGLHOwfE4uF0L0amfQhgwmDUqXOeSNKPl9ufdBq4cH9AQTAq6uMDBn0GAGOciWiER2AdPqESFgjEtYYGTaYmS/82cLXg0MkycGZqIeD7wVm3m6iKiKy0kG5XCPo19F1FctqkNk3AbkdwbabzM6tM/9xi2y2yOs3a7g1FUGUKJVqBIM6e5ksmiYzObXA8upei4EEkMudMHHvNtZpE9u2GRoZbmX0B9wAdJ8r8WVX5ProDUqlKm63wv+hH/ys2ZfLyDQ9AAAAAElFTkSuQmCC",
+            "type": "item"
+        },
         "tropicraft:bamboo_mug": {
             "name": "Empty Bamboo Mug",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90DGRccF3QIqvsAAAFeSURBVDjL3ZK/SwJhGMe/73mCOeRBQ9B5DkaLNpxQQ4NCUUORiA2F/4NrFNHQEGEIBRLNQoXUUEj2YwvEcgocimiqobPBIT06Pc7gaTg40izneqbn/cHn+bzP8wJ/Plj7RjEfp04Xx0I7rCutmI9TQBYpFPRSKOilgCxSQBZp0NtHkVk/AUAyMdNSgGuH7KaiUJQaFKUGVdWhqjq2k2EAwMrSOC0un7PYgmxB+HaARxKwn45Za00zwNlM+43NKwYA9Xrzu0FifZoK10/YO7iFRxLgkQQILgfEgV7kzh7g8/VjbXWKAMDptHduYmorQqMjEo5P7mDjOTAG2DgGt9uFi8tHZHP3DAAiYT9lT82c79TMueiwlVcq7yi/qi3nXw3436aiaQYaDfO9Wt1AbF4mo/mBzGGJ/QjQNAMvShU9Djveqg0o5ZplkDkqsa4faXJiqGXOum4aFG6eGf5nfAJQOXmFHx1WLQAAAABJRU5ErkJggg==",
@@ -287,6 +510,11 @@
         "tropicraft:bamboo_stick": {
             "name": "Bamboo Stick",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBEeBeuPKWkAAACsSURBVDjLY2AYCHD/2Z7/x062/WdgYGBgIlVzVXXQ/+ePTzFIypoxkGzA/Wd7/puYqjBs2XSGQVHKhZEkA+4/2/P/+eNTDAwMDAxtresYYeJMpGh++vQdQ1BAFyOyHDMxfpaS/M/w9Ok7htCgHkZ0eWZCNv//95bh0IGrDHk5cxmxqWEi1c/ogJGQn7E5G68XCPmZqBRWVR30n1g9jOQ4G8MAcjXDY4FczVQBAEnScqIaBUFKAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:black_pearl": {
+            "name": "Black Pearl",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBQLCdNHQb0AAAHHSURBVDjLpZNNb9NAEIYf764d4sSuiRRKaAwF0RuC31CQigQHDv3Z5Q8UCYEgIR/e0sQxxMH2LgeImybtqe9xduad1cwzcEc5NwWP3xzb2eWM6H4EQDJN0PqC8Wi0k6+2Ax9OT23QbhNGHXy/CUAQRpSVQUpph4OBc6vB65O3FkC5Hk8PnwEwm8/QU83zoyMutKaqKrv5E7VZvL/f5aD/hE7UwXUVU51QlQX9x33yPOdXlhKEAWEY2k/n5w6AADh5994GQZt+fFgXCyGw1gJQFiVtv0UYdQiCEKkkD3s9WxskkxFKKfJ8hf6pmacp8zTFcZzaxGLx/SZ7eyHLZb41g/9JOhkB0HsUI4Rg/GNAZSoAGnhIIRFC4rku+XJ5ZZAkGoAXL18B8PXLZ1q+X3dp+T5KKRznD5PJhLKq6jexuYXB9280Gh4A6WJRd19rPrvE81yUlLtrTBLNvWaT6WRMKwiRQhKGAQ7wO8+ZDodki4yyKMhXq10S+3H8bxCOQxwf0O0+wJgKIa5Q+Xh2htfwyJd5TeU1qtYm7SBAKQk4uK5LlmWsVivKosAYcw3pHbbXJsYYhBSYytRv28W3HtMakm3ddEx31l/toMN4uzuzlwAAAABJRU5ErkJggg==",
             "type": "item"
         },
         "tropicraft:block_azurite": {
@@ -364,6 +592,11 @@
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABdUExURf/UAMfCbE9MK4uISrKtYHp3QVlXMOXffLy3Zr66Z09NK4iESYuHS9fRdHJvPnl2QoB8RZKOT3VxQHh1Qnx4Q5iUUqmkW0RCJVlWMFNRLKCcVn16Q2NhNTw6IAAAAJQ+n1QAAAAfdFJOU////////////////////////////////////////wDNGXYQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVQoU43KxxKAIAxFUYIFrNgQa/7/M41BGceN3lVy5gl89RMExz8DeJAY3cASywTTCxSRziRizlCUhVKiqk1zL1roejPYsCCg4hPCAkCP1k0zPQx6Ge26OTo9oKP2nX8Pz74A8QDC3hcBtBxungAAAABJRU5ErkJggg==",
             "type": "item"
         },
+        "tropicraft:coconut_bomb": {
+            "name": "Coconut Grenade",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90DGgATLqdJJCcAAAG0SURBVDjLzZNPaxNRFMV/781MOrTJmMaCdCwNaREXWXRhFTGfQFD6DVy6kOCncCH4JcS9FHGh60ibVYSC6aZCRIxpTKrJZP6kk3nzXAi1kkQRN57dgXsu595zL/wjxJ8KKi665ZuUsgmA2Pv8F91dx9SuY87lM1GvVanXqlRcdMX9yc87qrhzRqjXqjx4uMumndGdjy3WSlcIxzGAkKtZnia2Lu8f0Ly1BSCWXzeQU7bRuvG+y+pmGSUzNI7aKKX05NOQJ1uOOC+ecnD/zg0tgK9eQBBGFC44dAc+hSULz48AxKu3H4ifXdaAyNxrc7aRx49uc7TX40uvxzhWtDonXC1JbJlwGinCKAKgP7ioPcZiJX8y7WDnekmnacqCZRALi6xtMQ4CJtJi4I0AxJvDDjt3y7x42QTgl0zSNEFKEye/jEoVI88jEQbH3T5ObumsbnHRmp3CzY283iiuIYDQH5Ei+eZHDIMxFgpAFK8Veb77bnaD7fWcXinkMQyDOI4BaPeHWIYkSX5cYvM4+v0pb6/ndDBJEYBtmYSnEwyhZ4rn/kL5kq0VEkOCKQWAOGgH/J/4DhMAsTVjV9jTAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
         "tropicraft:coconut_chunk": {
             "name": "Coconut Chunk",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90DGRchIz9UFvAAAAB/SURBVDjLY2AYBYMY/Pj4/D+MvXHNsv+exmL/saljwWXAubNnGC6dPfb/y8e3DK/ffWbgZMWqH7sBMNtv3blP0KVM2AQ5+CUZb925z/Dl41uCBmB1wcY1y+BOZ2BgYFjYk8/w/TcjVgOwiiIHGCfrf4bvvxkZtp99xTiatLADAOX7NBN87Up9AAAAAElFTkSuQmCC",
@@ -392,6 +625,36 @@
         "tropicraft:cooked_frog_leg": {
             "name": "Cooked Frog Leg",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBAhN3pEOOIAAAEJSURBVDjLY2AY8oARl0RJosV/GPvgmYcM5vqyDBysTAw980+g6GHCpfngmYcMr7/8Ynj95ReDub4sw9GzED6ywTgNYGNmYtDSkGS4fe8VXMzaWJ7h2o3nDK+//EJRy4LNgE8//jDwsrMwPHj8j+HB4xcMDAwMDEFuMgxaGpIMuw++IBwGprqS/7U0JBl42VkYpiw5xcjAwMAgJSb1n5XlH8PDZy8YCbrg9OXnjL9+/f1va6oAF3v26hlWy5hwxYKBngzD0bMPCUYjEz5JaSVRggageMFQU/y/no40Ay87C8PJi48Znr5kJM2A89dfMrKwMP3X0pBkePqSEae/cYL4UKP/sFgYOpkJABArVlNYhRK4AAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:coral_0": {
+            "name": "Coral",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBgAZK4UjDBUAAAH1SURBVDjLpZM/aBNhGMZ/Z5Imd6H50/ZSEpDWf1AcajdxcJUOInQSpGMGtywdROwm4lCHLEWwYxY36SQUXAQLHSQWIyqNNo14Sa6Jvd4llyaXfA7q2SNpHXzH5+V9+D3v+33wnyUNE51sXgAgy2Db+DNz0kkGZ4aqTZNmeQ+7vAeBAM7KlvgngbNaEBw08N+/7mrm8oaQJ1T8mTnJefRaADSq+ySyC5KH4E+TyZSLbyytC0ur4vbDozCRwCfLJ0Q4aMBR+1duILpy62/uyRRdAY3CB/T3BY+BH/BgG0vrQkvnRHJtUfKFwwDom5sAtE2L4G/NY3C8wmNx6t+rVDIvRKNYpNNs0TUtzj2/K526RHN5Q/jHVbq2ja/nYOp1DsrfGAkFkRUZJRYZjHbcQEvnRNu0aPf6nL12Fcc0kaxDz0D93ksRjYQ9kT1uX28/Faa+D4B6ZRZfvwdAIrsgOdm8MLQK44/npVNfopbOCQAlFqH0dpuL8zcQnSMADndLKLGIh2pgier5KRfxy51norpTJDIWd8+XXFscTvDx5hORnLmE3e3T0nXUC9P4RqNU8u8A+LFbInV5ZsDAJei0bHbebBGfnkJRVQytBlqN2qfPBIJBAqHQwLDHYPbVAwlgO/RQWJUqLcMgEAzidDoo0Sgjijz0M/0Eb3DPe1gnv64AAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:coral_1": {
+            "name": "Coral",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBgAaO7O5T7IAAAJZSURBVDjLlZJPSJNhHMc/r3t9ncumzrncv7YWhUqZCYkQGVKdmoR0SHDgwaxL1w47Sad1CI9FKYZgYHSwIIg0CI0IpTRJkkjN0hnO17m5zZluPh3C0XIG/k4Pz8Pz4fv7fr+wy1R5WkVvY7Wob78v+M9kZbqsb/OJpuAwjw+d4/SXF+wZ4J+eAaBFfcdm7n7q23xiTwAAo6mQ9sUNTixP4R96RXNHl/BUOoWn0il2BTR4vaLK0yqsh110L0S4aVaYDESx1p7n1MsHxEsKcJeaMivovHFZ1Iw+55oplHpUFR2yRgLAoEly3axLebQD8FPWYXU5KIosQb6BZls+vZPzzGv1iIUZppC5PR9DTaRvLW8fzIk1QuEQBzVJCAcZiyS46ijkVyzO4NQMxyyCIyU6Hvqj9N/ySjsU3A0ZUM1lIGtomX6G+nWOwWCCA3kKlYY4YQlWkgLVUpPZg9GeDmlcMaLJzgHAXWpC/eZnMbrBBZ1Aq5HpzDqOw25MFW1HCn0+n3RPuBiSrRTpsgHQyln8CEQZiYDDbuT7nJrWVunf/Bu8XpFQ9Fxafs/nKAQ+fqDYZWNQV4YlFxbif0DOL28AkDKVqLexWoxo7YTdLYw97QPg7Nok+9xXqBjoQdFIdNvr6PP5JPlvOdtebAmJ6vU5bP0+9GsC2/oqsbqLfHrSRXmBQiCpsKmq6TGWTwxw0qIHT6u4AzQFhwHIKyomdvQMFeOvWcmWeBtNMJvYQnEa01eo8rSK8okB3KUm/KvrhKx2QksruHI0zCY2md3cotZSzKOohdGejtS/35pu5anrk2YrAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:coral_2": {
+            "name": "Coral",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBgAbDvwRutAAAAJaSURBVDjLpZNNSFRhFIafe+fOv87MnZ+a0cGpLG1AKHQImUUrDUQ30aqdLSPatGhnmwJrYS3cKC1CKAwMDDe1sChDsVpIFGhBaDbjz/x00+mijjP3azE5NIzYorM6HPie8/J+74H/LGm/4Uh/i9jrI/EQU4M6Ab/B5aFZ6UDA3eunRWt3oAo4P5rDosgsJooA3Hr6VqoCDN9pFcdOefn4MoPTJwOgZw2cPpnmdh9FbReTamZqUAfgxpMZCUAGePwoJmxGHl/QgdMno2cNmtt9tPeEaTrjZS2hsTi9ikMyc/aqk4Df4NXrTlEGBMMq4aifzY0tAFq7A7jcdmq8FuaeZTh02MPxngbmp5erTRzpbxGFpIv1lETBEETqJCIXHLjcdrSlTdL6LwC0NwrRi7UAfB3TyRcMkmsCBWA9JRG/4qgwzRFZ5e+f0MgBMHlvE1UtUt8B6XELcjjqr5D0eTaLNShIzrmxNtiIxEPMj+aosSllA9t6VXaWt2k6n0cxqWZU7zYALrcdd1hmI7GLLCksTVjR1By6RxDtspMf02ns8pBf2SJ0xIulzoqynYKmc24WJrOc7CgZuvIhjdmxQ1uvWqFuMVGkscbAtCtjUs1M3NZKOXg+1ilSCzn0JNhOFPjxCer/wL7NlLywNtj4Mm4h4DdIZ+RyFqqi+WAgJo7GSpv3HkfiIQCmBvVygA68hYFLMdHWq7KW0AiGS7AX939y8+F76Z/HNNQXE+nvJqwBEEUwClDYEeQyMrV+g77hd/sruNYVE4pDwaSURsWCqOgBTIqEw1Mkr4uymt/GUN8DNe/YnAAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:coral_3": {
+            "name": "Coral",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBgAbIs7J1jMAAACzSURBVDjL7Y89CsJAEIW/wV0QTGWRG9gkF/AY3mK7HMa72Ke2t0iRysqFYCcsSRgL2fgXEcEyr5k3w3vzZmDChH+j26Y6Vl/51yXBoZ/6n5Y8mscu6LapSiSm8DImjHOA4NBZntIfPLM8xRReTBRFoym8BIfWR4uV9inx0TwExNT+4IdhXYFdtG/nmsJLs0FPlScrkeC4vRAcWld3sV3AuYFkfuMAqx2yX6PJ0sKlJSsRgCtremD9FQN0PgAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:coral_4": {
+            "name": "Coral",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBgAbMD1wp3sAAAImSURBVDjLlZPNThNRFMd/53ZmOm3aWMxQUyJEEje8gCufwwdo4srIzoCQiDV+sGBBSExMSPoALnkMwlpZoFQDVp2JaWlth87MvS7GKR1ZeVb33pzz/zjnHvjPKG40zexdAJz2lpk0W5IlXL5uS5bgtLeM9qqoYMCk2RJ7f9MASMFCe1UUwKTZEqe9ZQD0ciPHOFvs7q2b6OErMbfmALA6AdZssv3+jYkePM2zA8rv4+6t56Qrv0+4tisq52cYXmO3D08I13ZF6wTGIdbBTh4oO0yaLdFelcwKgPr8HVOv4ew+MWowIl65nUr/eDYFyFlQwQAufmMd7Bjn6JSoXoNPXRSQLMxNi7XRTNb3ZKogY1XDSwrBEPF7aK+K/OyDYzO5v4KZr6UE4xAlatqTqYXsYfzynZj5GvEdD8JLtNFIlGB1AtR5gC4IlFzC1W3JASRe5WoahycAmKU6qlzGPu7Crx4kCcopEq5uS0Z47cNYnQDGIcmiR9KoUej2sD6cYaouer6GGoboivu38c8lNwUVDNLxjUcUjr9infqYikt07y7JopcqbdQwro3V8a+mUNxoGr3cQHvVFK2ygO6coTpdlN+HUsqY3CxD0EN6Q5J4TM6Cvb9pKBWR028oJ5XL+Q9UlJAs1cG1kC8+xBFWYjN68VZyAADlZ49MrEMwoGwbfaMM4QQuLqb9FlHMLpv8u67O9mPDcARKQBQSxRgTI2JRsEpT5iz+AD8F+gpediFCAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:coral_5": {
+            "name": "Coral",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBgAcASPvMYYAAAKgSURBVDjLxZNdSJNhFMd/z/u+297NzWo6nVn0QZmREQWBFBFBSNhF3WRfoCUV5YVFVyl01UUm9CV0kQZ9muRFCIVgXzO0MhKMkKg0Imq0ttfpNjd9N+3pYrQ+7ztXh8P5nwP/3znwv0P8qxjyrZIAsWGTy7fCbC914CrSAdD0tKSwYlAAaH+Kj28skKm4pPrIR4rzraxd6KD1SYJgVxQAr9NCzSF3pv+3Aee3zJW6pmDJEmiKID9b4/2ISdW2vExP3YVPmBGJv71EFlYMCuXXzZ4sjUA0RTKUxKLCu6DJhkUuOu4atN4OotoEe1antydCkobyQpnx4M3ZZfLUjSDz3RZ2bZ0Fo3EAwkGdhodBlnt1pJAcPJBDY1MIu6ZSuTUXFWDv6hxZushJz+A4Q0aKZ68S5NsctPRECMSmGAol0RSF2qpcAPr6J3j91cQ3EEHzt5fIxqYQmh0a6r0AfO6dAmCJR6d7OI5VUVlRmKZwptkgEJ1mpkNw82VYKFaPlWxdoa4lQMxQuX5llGsvxuj7GGfYMLEpKmsW2NlU5sI2Q7B/Sx7HKwuIJ7+lKSRDSQCc1rQdCVPyYcSkfofGOvssLl6KEJ5M4fAIEjGNq70GE8EUukX8xLiv0s2la2FUmyDHqRIzp6k6P07bWRfVpWnX+zsnOe0LkZOlUTLbyuHN2RR5bGkK/vYSCRAZTBAbs+IbjjHPC+vLsvn0VNLSZ/D2a5Jcp0ZjTQGd96IY8SlOPPgiMhif1xbLtoEwO1e6cS8W2FzwpN+k43GUmPmNmQ7ByaNeJkag4/4Yxzr9f5/yzpVu2gbCuF6rzJlh5dG7OIoCRfka5bs9CN1CV/dIxsC/nul5bbH8kbvzJpmeFtgXOHAtzQIgcMeg2TfOuZ5gRvcdw8L/XdJDeWIAAAAASUVORK5CYII=",
             "type": "item"
         },
         "tropicraft:curare_bowl": {
@@ -434,9 +697,64 @@
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAAGbSURBVDhPlZJbT8JAEIVPt4VyK6gIthrxHmLiJfimf0H95776puiDiaIxXgBDpWydmZaGipD4JZvdTmfOnp1dzMN1XSNezkTFc4pifSvkuavzWgJz+FOAWWyehIay4q/ZiEDJ3Q15SIQwlIni4jac1Wb8by/595vkjJMCzMJmC+EowOD9kbIM+J8vMLMFBN9d9J/ukrrkCL2nGwNhCLtcg+M1wetQj2CYlhRWGkfiSKlsXBGR7gHtZDvLVJCDDnwEgx4HSUyLGM/KslFa2UncJgLVM6+k9RCjoU95Gn73FSpjQ5kZig0w/PqQkavUZaPxkVX11KXhlf12sZuveCL2+XAN/6NDeQasvINscUkayy409WWS1EMpr+1TzpAtiov+yz1FI7eF5Q0SVNTMZwR+P+oZkRJgW7kFT/rANvkGdPAt1hOoub3O7fQtcLG9VBOboQ7kCpWVRaHaQGX9IM4C1g9NJ14KojT1BjaO6foyeGtfxZGIse0pJgV4zcNrnade5yzkCKx8dHEgD3+8Cx/j3xxfRiJjFxKcC/AD8TyjZWOvRMwAAAAASUVORK5CYII=",
             "type": "item"
         },
+        "tropicraft:dagger": {
+            "name": "Dagger",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBYjJ1FINrYAAADGSURBVDjL7ZKxCoJQFIb/4xDi0m1pcs4SWn2ecGiLlusmCA41KBd8gx6mSWi2QegBhKCcajkNIaZL3q2hb/zh/ziHc4A/HbIs4ziOWadD/SBNU66qCo7jwPd9+iYw+oGUkkzTRJ7nUEqx9gQNQRBwXdewbRthGNLgCRqSJCHLslAUBaIoYm0BACilSAiBsiyx98BaK3yyWYKvD8CbAttjt0NDz7V235KZAHantkc6N1/NwbcnsJi0EkNHcDiDxiPgcv+l938Bq2Y5DG970+EAAAAASUVORK5CYII=",
+            "type": "item"
+        },
         "tropicraft:enc_tropica": {
             "name": "Encyclopedia Tropica",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUIxQTVENkVEQjYxMTFFMkE0QzVEODk0Q0I5NjZGRDciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUIxQTVENkZEQjYxMTFFMkE0QzVEODk0Q0I5NjZGRDciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QjFBNUQ2Q0RCNjExMUUyQTRDNUQ4OTRDQjk2NkZENyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QjFBNUQ2RERCNjExMUUyQTRDNUQ4OTRDQjk2NkZENyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqnKOJwAAAAqUExURXNKHyUZCRYQBRcQB9GzVblqO/nwctvTayYbCP/4k4+KRgYA/wh4pf///5zZoncAAAAOdFJOU/////////////////8ARcDcyAAAAGtJREFUeNpcj0sWwCAIAxNEoR/vf91SlT5fWTETFgT9N8jFjLtwA8BPWGBZJoR57MWWwUwN5ZgGzpEeKGcYEn5xpGfckarwW5mpalNIba+Z2KqgD7OwSohhEudjYRLXp1ITs4skbm1zHgEGAMTYByr34yCNAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:eudialyte_axe": {
+            "name": "Eudialyte Axe",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAnHVM/kqcAAAFJSURBVDjLnZE/S0JxFIafn3kL7YYRpaS1BC1N+h1CmyPyC9QULdEkkQTiVC0SBE2OhR/AwVmwD9DSECI3ycDIf93rvbdfgylRmdfe8Ryec973HIED5ZPn0tB1bMti8+xYfO25ncLP1SqGrv/oi1Gw2e3ypGm81l8GAxKF3IBzjQPP+RcIhIKk17ekowiNlx5o6DrTMyqKotBqNAC42N6V84HAcAcbJwfCrSjs3VwJ235nyuPBNE3azRZeVQWg3Wz9fQOAbGRFeidc3M+GAfCqKsqkgm1aBJZCwx304dXLHcodg0QhJ/zBRWzLwjYtVJ+PeCYlxKjN5Y7B4V1F5JPnsl6rob/17hHPpMTQN36H+/Xr/SMJDOBfFY2FZbGUlqdry5JxlY2syGIpLaOxsGNYjLLtaMB/YQAeHgv/zwy4qpVbNK0+/uZPfQC5ILCnbDPQdQAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:eudialyte_hoe": {
+            "name": "Eudialyte Hoe",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAnC6frJ/YAAAD/SURBVDjLzY+7SgNRFEXXmbHyB6x8Qiys4jcISS/a+mhtTGFnbSCQVkjno0ljZ6WMhU0gqQQhKASGYcikC4KY5CZ6j1VAUmTudO52s/Y5S3DIc6WmVi1qlei1zXH9UqadpMFXh6c6+RqiqogIS+urhG/vlO5vBcCbB18flfSz/wHAcGwYmBFRp8PKZo6LnT11+uBvwiTQ+kGNBd9n8v3D+dOdeK5woZjXXtwid7LGyBiste6Xb7Y3tNEsa6GY19lOXOBF3yMaGM7asWQaSINTnRvNsla3lpWsmeecqpD1bfkfzmESODvPxguTQHtxi263z+PDi2QemML7u9XMMMAvfm2Py47HK6wAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:eudialyte_pickaxe": {
+            "name": "Eudialyte_Pickaxe",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAnMBbgztIAAAEkSURBVDjLnZC/S8NAGIbfLxeMaP0TXAouTtHdNRnqf1BQhI66ZVNEELpUFxcFXToJijorxTHQTk6uRULbxR9D09gkJ5+DNEua4+ozHXc833fvS1Dw4B3z5CylhDBN/EiJKAyxfXVKAEBF8vXuPo+GQ3y9f8Cat7L7eBxjHH2DiHDwfEem6ge15llugePavIEymBmXW3tMmIFuv8WDoIOjwxtsltYxZ1kwdOXmWpkHQQe93ieeHl8oCkeQUsLUlReEAX/nHN5rQADA/NevoSu/RXEmA8DiUglpkqgHdPstXrmo5eQJQojiAY5rZ5mnyQCQJmnxZr9dZ8e1edp7o1LlRqXKhZn9dp1v7z3WKZh0CtMa8B85l/lkdZkxI4ZO20pUbevwC+fan5j5KFRXAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:eudialyte_shovel": {
+            "name": "Eudialyte Shovel",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAoBcfLFj4AAAEXSURBVDjLnZG9SgNBFIXP7IqbnUULi3QiWKaKj2CTtbay0iewEVsRESxCyBPY2FpYqwh24k+hlaUWIYohRNDMjOidvRa6QxB1h/2qO7f4OHOuAIDd5VXGNzJJMFWtYmFrTcAD0UyXuCJjjEcRwjAEACSTE96SMbKEN23cIpYS6uUVvgREhFGJ0RoVKaGVwuFmmwsF+eAklOG53wfbzC+BEAGIyEm+hgzWWgx6vWLBxumByCVEhKFRGBqFd2Xwcb5ffIXRx/b8ovtz/HSFGRlB2wwr13fCS/CTVm2afSQokpxd7PD9wwn/e4W/WL/tiG53gMfOJRppnVGWRlr/NUngKzg+unFJ9uZm2atEn2JF2WJzSWny63wCHSyUwBn5FM8AAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:eudialyte": {
+            "name": "Eudialyte",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBQ2OOhxCTkAAAFMSURBVDjL7ZG/SwIBFMc/F3eenXZ65eUPqECQBBfBQWsIamkSkcCGkJqClqg/JGhvCaJ/INpqdLSlH0PQUokGoheXdZSe1yYKVkNLQ9/twft833vfB//6tYSfGg5WtxzFJSOLEvVng7bdYfvkUPjR4Li44/TX19V7psMRZpbmsHUf2WxWABC/gmRR4uLhjoBXRXUrxMYneTFMbN1HpVTuMSP9BmtH+4IsSsiiRLVRJxoIMaUHeWu1iMyniK0sUymVCWWSPaa3wV5u3QmpGu+dNk+mQbfToVFrUqlBeqPAq2URjkd51zxYljU8xL3cugOgjHnxI6KlEnR9CgCXp+fMFnMA5PN5YegJpmGgudx8GCZaKkEz6MUfj9IWHKYXM0PDHggxvVHA1n3owOPNLW9nV3gWbKTgBKN+78Dkb9+4v7nryJpKKJMcCv0tfQIVSGIXBklApQAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:fertilizer": {
+            "name": "Fertilizer",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBQlEyUisesAAAJjSURBVDjLpZNLSFRRHMZ/996ZuTN3HOeh5qRRKUgZ9EJomQYmtGiTRkSE4DYIadHClSvDtdRSkKCIEloEQQ8KwimMFiKlhIhjNeOjcWac17137r2nhTg5jLTpvzrncL5zft/5zh/+s6T9FjuGp0VnNABA0K/REAwwu7BE7F5/zX55P7HHSBP0axxqbiS9nUM3yzQGA/sSuPZOIgNjgsJvNC1AKr2Npno5EKrHccCveonenBDX+roxTZMnb2NsPbotVSGFBsaF16cRDgTRDZ1QMEK4vg7Vo/BjI0X/+S4yhRLTM3MUDQtyyWoCGRvTEawl4yhaPVk9QTzlRXLK2KaJIwQPX38ERQXh1FpQXB5sI4/vYCcA1sYiLiwudl8AYDVVoKfrFO8/vANg69nIjoW+sZcC4NXIJSk8NCXOHWtnfiWJAPrOdpDOlwD4vV1kK5fH7VKYH78sAchHbj0WS6u/8LjdNNyYECG/F1mGSChUEeu5PHouT53kUDYMctv56hRsxc+Xz7P43R4yBZ1PC8sAdLU1Ea7zMbeaBCBjmDiKTET1/H23+P3rkpNN0Ha0nbbWFgLGJunJQenulR6Ot0SY+7ZMybLYLOnYQpAr6sT3EFRibL46JnyqyskTp4k2RQFoafTgdas8eDGD5lLYKOp0Hm4FIDbaK1X9xPWnI5Jc38pmUWerkOJ7Yh2vWyXgc5M3y1XiYibLmeFpUROjbtksr6XR3C4s2+bryk/yZpn05OAO6egbUcxkqyxU9ULJsnDJMoZtoyoKi4kUz+/0VGzGRnulXfHuoTXdFR6aErvjys3/qD9rQALSDgu8WwAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:fishing_net": {
+            "name": "Fishing Net",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QUQAgsa55+JYQAAAL5JREFUOMudkrENwjAQRf8hJqFgAsZAFJGYgjZV6KloM0WkTJAaCUZIkRTIocsKn+rQYeyE2I3Pst///2wDCaPtSrZdSaTCJAkAVZ1ztRTebk4iIqIiSc4kWdU5/xax/SqsdZLzInjKeVJkrudZOOTsg1ERG9U621lr8eHinHF/2MG5EQBwzK6ikL6/iEgwQT80vN0vLM5Z0NVG/0nQDw1fzwecG6Ou1v2zH4O/DvmQ+coyBYdu20+ynoMViq3f/roW1KyguZYAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:fishing_rod_good": {
+            "name": "Good Rod",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QcOASQs8nnpAAAAATxJREFUOMtjYBiSYNXS8v+7N6b+Z2BgYGAiVfPqZSX///9jZjhz/gIDyQYsW1DwX1BQhOH584MMFfWnSLN55uTo/5fP1PzvaTX7z8DAwPD/////RGteMj/v/+lD6f972y3gmmAGMBLSPH1C/H9ZWR6Gx4/vM2QWbGOEaWZkZCSol2H6hPj/R/cW/a+rMEVxLrLzWfAFmJzMb4ajx64wNHWcZkTWTND2xXOz/5/ck/e/odIcxeYTdxj+P/nJ8H/LEQbcLli+OP//lfNXGZ6/dWMQlFBmMDX99//0aYgLqhkYGDiZGRieyiDUs6Br/vD6EcPvf68YuLm5GdBd2sXCwMD7iYHh0VcGBheoGFxFa73T/5cv/zDw8nxiaO25wGhqCgk4mO0MDAz/oer/Y429/EzV/5N6XAgljv9Uz1gAUsSLwzrsPxAAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:fishing_rod_old": {
+            "name": "Old Rod",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QcOASMwqTkjiAAAATZJREFUOMtjYBiSYNXS8v+7N6b+Z2BgYGAiVfPqZSX///9jZjhz/gIDyQYsW1DwX1BQhOH584MMFfWnSLN55uTo/5fP1PzvaTX7z8DAwPD/////RGteMj/v/+lD6f972y3gmmAGMBLSPH1C/H9ZWR6Gx4/vM2QWbGOEaWZkZCSol2H6hPj/R/cW/a+rMEVxLrLzWfAFmJzMb4ajx64wNHWcZkTWTND2xXOz/5/ck/e/odIcw2YYwOmC5Yvz/185f5Xh+Vs3BkEJZQZT03//T5+GuKBeQ4PBiIeH4dyXLwxYDVi+OP//h9ePGH7/e8XAzc3NgO7Sxhs3GBgYGBj8GRgYmqBycBWt9U7/X778w8DL84mhtecCo6kpJOBgtjMwMPyHqv+PNfbyM1X/T+pxIZQ4/lM9YwEAjASRZC165DIAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:fishing_rod_super": {
+            "name": "Super Rod",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QcOATEyP8MydwAAAU1JREFUOMvVkrFLQmEUxc/LgkAXycEha4gay+WLpoaIpv6BaBCCKAlUQkgoMgKxwcBqUIcwsBRqiqCGcCgwsicYZFsQ5CAUgYSDIbzTENqzTJMmz3KX+7vnfIcPaEkdHizx/HiWANDWLHwUdZKKBqn0LZo+EN1zUK83IJe7gMt905xzaGead6kV+jzDBACS/DO8H7ZRvpzjpnekApUPSI3ggN9Ck0mHbPYRVsepVIYlSWrIIuC3MBFf5KpLVMVVx2+vV1hPdwmJqwzWN2RJDavda8aI7C5woFeDs3gSa95kZWcG19TBiHfkEYJZqpkgFrEzk75H7nUCemMfhFAoy58JOqcm0WXoQKGgAOEaT4hF7My/PKGkPEOr1eJ7T8XYCYoYwhseAAxWO3vcY7TNj3LZaSYACCEoxFd5W8Eg1fOH7NZ+bvvG636OX+H/6APL2I+Ysgd/RQAAAABJRU5ErkJggg==",
             "type": "item"
         },
         "tropicraft:flower_0": {
@@ -514,6 +832,11 @@
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBgAHG3e7A2YAAAEwSURBVDjLpZI9S4JhFIavt4awLVSSxqwxQ2lziqgGkaYoQYLAwD7oQyIqgiLJhCKCQC3EQcSGwMU5/A9NBqEN0SCIBqJp0ekH5Js8da/nPudc3Odo6Oh440ZeKwXGZi343Juank+34F/YFYB8KYtjwEP9s0YsGf7h79IbEEuGtefqPYH9Q1of7zSbdTUCgEwuLbn0I5VaidRttK1XlyAY3Zbg+Tq1ehVDdy9KOvJHxOtZlnj2Ujp52xK8NAsARK5OOy7TzcAx1S+j5nn6esxcJA40JQKAJd8OIl+8tcrqBCcrcSk28lgnNPa8Z5pyBsVGHoC7RIp/KZNLi91lkj+FCGB3mWTY4GbIaCN0vaX2SACB1RAAT+UHdYLx6UmxGkdwzg2yOLOmfkabxQnwazPAN1tYYm6aD8lQAAAAAElFTkSuQmCC",
             "type": "item"
         },
+        "tropicraft:flower_pot": {
+            "name": "Flower Pot",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QUVBAcF9XFHGAAAAcVJREFUOMvtks2KE1EQhU/duj+dHhPaHpUhI4iIgyiKA76HDII/L+JD6MKNvoG4Et9BcakuFNxIVIbowpnMJJ1Op7vT95YLScYkS7ee1dnU4TtVBfzXP4vm5svnhzIalfBe8PzFB4gI8rySO3s38m63Y41W1kVMIgCzwuWrjwgA9DxABAgiODjIsbNzRra7HVhraFrO2qOshLOEYfZneDONFwSLgFnj8fLVR7RaGptpDB8EVTWTVsvAh0A/fhawTiPpREsV1NxYw3hwdxdJ0hLnDLwPGGUlBoMJ9veH0u8Pw2hYwVgNUrQeAABaq0kUWWFWiJzBJK/l+KjAeFxJWTbo9X7h1IaBIlqvUBSzDjMdXbxwmoIXVHUQaxnZ2Iv3M4zzEue3EzinFwtcJaiYWW3EFtZqskaRcwbOMeqqAYHo3fs+mJegTwgAeGaQtRqv33xFVXtK05aEEECKUNUeW1vttT84OSPgQ8ClODaf9m5fM1lWquPhVPW+DTApCFqz3L+3S3/jL1W4eesJAHx3TltttGLNKo4t0jSmum6oLBtiVrJKsFToyvXH0vhgs2xKcWwoSSI6d7ZNRVHT4eGEnj57y6sBvwHtP7kgFuZDcgAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
         "tropicraft:fresh_marlin": {
             "name": "Fresh Marlin",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBEVB+Z1kY4AAAHZSURBVDjLrZO/a1NRFMc/eee+m1SQQhcVBxc3ayESyCQaGnjQOGQVKl0c7ODgf+F/4Fao6eLSKREepmTopAQDtfkDKjgVOvRHXt59777nUN8lmhYEPdPhnHs+fL+Hc+Efo/RnYevl8xxyoIRe0JjIUG+vMQr72NRSawU8ePaidCVge3M9FyWYKEZ8hSihGjQ52BsAsLLacKCNdzslAA9g5/VGPu52cptYRAl6oQyATa2DF7koQZT8UgreuNvJAYa9kHp7jZXVBqLkcihJHUCUkJoYpZXrA3jDXkg1aFJrBQx7oZMKUG+3nGQApctkNkNXNJd7Ak+UuEFRwijsu3xWviceo7DP8tMnROcRCzdvsL25nitR8pvX2cHUxADoiiazGX7Z52BvQDVoujdKVzSLtxYBMFHsFihK+DbYpxo0GYV9RAlJnOCXfafSphbPTA33lh9xdPiV2/fvsHR3CYDobOIsVYMmZmqwqWV6MZ0/pI9v3+RFoYABHB8doysaMzXUWgGjsI+JYqyJEV0mPTudv8RZGMDJjxP8sk8SJzxsPObzh13yLCO3lomVecB1oELd/tZ7Tq2ggYur/sJ1oMLa9y+HnFthAqT5XwCKGHc7eQEAeLX7qcT/iJ+IjNik9hr5TwAAAABJRU5ErkJggg==",
@@ -522,6 +845,11 @@
         "tropicraft:grapefruit": {
             "name": "Grapefruit",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBUZOPuvW2MAAAIUSURBVDjLdZJLbhQxEIY/2+3uycwEseQhEAsWKFJWXAPuwAKElAXHQWKDuAMHgR0CgQQEEvEIhGTUD9tVxaIznYRHrSyrvt/1qez4Rx1+e2RdXwC4d/cxz57vAHD52mP3Z2/1P3ANr2sYhPdvH1rThHNB02F/d8cAcrnExvwWReZgu2Dfx4D+E00TGAbhbIhbw8erxOaF2+AuIrJE5SMxeobuJcAEpyyYQVMHbtx84iaF2ew6aRDMCbGCGD0A3l8h1p6clKb5QspCHT1FdFTY392xlJR64w7BfUbsKugLNppvdH2ZXq1jQE6gIob3oArV2imnD2Q7YLk4APtK1wttmwnBTwptqzjvqL2jiNJ3ZdxCSkrd/KAU+HU0INLjvaOuA11f2FzWHB0nFvMKNWjbTFV5hlRO11iKYQbefWE2j9TRc7zKbC5rjleJpgmkrGAQgqNtM845fBElFwHbA9ujFAGg7QrOO/qhMJtVqBptm8GBiiFiLBYRX504moFzEOM4tqhhZlTBI0VJSVgua0SUn4cDqnb6kd69fmAxBooopoaajeN5h6rhvSN4R87Kz8MegMUisrX91HmA+TxOex2hMdkxTpWz0veF7wfd1FNV/vxXfvf6geFGlRAcIoYUHc8Kq1VCdfQG2Np+6s4FALx5dd+aOpBPnAG6riCihOCJ0VNVfoL/Cjgb1PcFEZvumiacA9f1G6AUPwMtOsq6AAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:iris": {
+            "name": "Iris",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90DGRUwOOVsKGIAAAEESURBVDjLY2CgJXBQmfifgYGBwUah9z8uNYy4JFxU5v7/w/CF4dvP9wwCnLIMDAwMDLtuJTMSbQADAwODhkjqf252EQZeTmmGA3dyGElygZFUxX8GBgYGVv5fDKzfxRgYGBgYjjyowFDPhMv5AlyyDAoiVgwnrvXBxW0UOv4T7QIbhc7/YnyaDBIK1xkuXWKAuqCckeSYyPLr/E9RVNpFseE1gInStEK0AS6JPP9JMsDAhwGuwSqM6f+3r9+wqmPBZ6tVGNv/P3/+MHBxc0FFvhBvgKahAMPXj/8YXj/9zvDu9TeGc1v+MZLkheXNHxi/f/vN8Pv3X/ID8cObHwyMTPiTAQBHw0z0ws8EaQAAAABJRU5ErkJggg==",
             "type": "item"
         },
         "tropicraft:kapok": {
@@ -557,6 +885,11 @@
             "name": "Grapefruit Leaves",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QYEAS4Chp3FkQAAAwdJREFUOMs9k01sVWUQhp/5zv3vaW9DUHNXJC5cGMXowooLY8AiUhVDysKGYCIsNDFuEGpSfyAk6sZ0K1jUDXZDSzUmBBKkMaICKWxMwABS6aKlre2995x7uefn+8bFsZ3VO4t5Z955Z+ThL3p0eucg265M4gJH+5eY4ExH+D82HOzSlS9bMjd7SI0RjITEiaPdTtj622mMazoe3/yNmG5BEwjOdMR/taRrBPEtS9f2ooqU8YwQthIajYhKJU/wY8R6p4eOduvVvfsJwyb9M5NoqCy835BHRnvUVITWhZjLnwyRJA5jhO3XJtFEyQHM3vlAo9hSr68gIuAgXbQAmC7BNhTbcGy9MkFy17J8LJDaWK/ahmIA+n76mhfOnSSX8/A8g0ZK51oCgK0rLlRa5yKZf7suWQWk9y2u4bLU6xHS+w6AvsOnSBcdUsnUtacjjJ/h7tdLunw0kO7dJV0aCUQTEH+gqOXnCyyNBOLvKOr10X1Y63jx59OQh4V3GzI3e0hFyli7yKZHvxJ/Z1GlIOCB8V8ukd/kAXB9dF82nnWIL9hlxz9/v6OeVyHnRXgCN/7crwDBVEckL+S8jYb4VgpAFKdYqxgDdtGtGYTnCQ/adZLEYa1SfatCV39RWxdjTPRXSvtSDMCWT8fZ9sNE5oQHSx8HApBEC4SthFY7xvME11RcS/nj2BAmvpHSOh/J2ljTu/fQd/B7HvyakT53fpx6M8O5nMezI6ewq46Lr+0BQGpjvTp/oC61sV6VApx94g1UFRHhqWe+y/xecSwebkrtRFWTWcvyZ6H4rxS1e1eJXDKb6Zc8pAsOeVLYMTOFFDL98wfqsvEjXwHSJYeUMkvVgqZgpCzcuzuswVQHjZXNT38rGivxbbu+xM5Mso7bl2JqJ3u1Z7DEwnsNkeresl7+cIjUOrYcGQcDhcdy/Pt5uP4n1aGy2hXHzePDWKesrtyj/+wknasJptxXIEkt1iq/H3mTYKIj3obsXv2BotZOVLXyUpGbx4cJwyb11TlEhAsDg/i7SvwHaqaGJx0Zx2EAAAAASUVORK5CYII=",
             "type": "block"
+        },
+        "tropicraft:leaf_green": {
+            "name": "Leaf Ball",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYNFjcwsSvHdgAAANBJREFUOMvtkj0OgjAYhp8PjYLlBLoYdNKEydN4EgdHB3fv4IFIWIgaF08AFRy0DgYt8Qc3F9+pbfo+ffKl8M/HjFaBqbsj9qY/7RmA/fog5VqFLgDxbCu1ABtil8voqGC/PlQ6zjs1v6swuUAm6KhARwUA4+XA1AI6kzamdUHO1fPSyIY0X+qfwGkJaXJ8lAMPsufHngxU6OIUDdLkiAq8WxHQu5yvhmhnPB/eVW2ACjzwDfFsK84nQLzYCL5B7/KKDb75zuDVfFTovv0Tv8kViH1B95QJfbkAAAAASUVORK5CYII=",
+            "type": "item"
         },
         "tropicraft:leaf_lemon": {
             "name": "Lemon Leaves",
@@ -596,6 +929,71 @@
                 "left": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EChEXFhT6G3UAAALNSURBVDjLLdDJbxxFGEDxV1/13rN7xo5XmRBH2DFESEicubD8uxw5AEIIEQHKIkLkIOJksD2Wt9l6ume6uro4hOs7/A5PPRrErr8Ws98Rnpwu+PKohS+KN3cr1lKf4cSx2QDRPitj6SaKH0/mfHPc5t1NgeAJ+10PTxShD7+9XZCVlkHq0YmE6+mSX08zTi7npJFiNFkBNRfTkqoG8TzNRjtmklc86EeMc0uoBQd892pKXhpwjq+PWuRLw8vRkl7DZ1ZYlhVIVVmenM7Z6wWgFOB4OSr486LA1vDVYYvawdvbFYcbEZ3E4yarAFgYhYgIH/Q0l/P38eOtmPWmR15atjo+aSh8shOTr2r+nRi2Wh6mctzf7lHXJdJJNK+vSpyDu7wi9BXNSLPXDdjt+ARa2OsG/DHMyVaWGsfjnZjVYsbN3CLHO22O7gWsNz2uZobnZwVJIFTWoUVwOL4/mfPpbkIaCBfj90+mhQUF0o0c2dIC4ICH6xEAg6ZPKxLGeU0SamzteDrMqYHJ0nK3sPgiiLU1T88KAOraMVtatIJf3mQA/PR3xsEgZK3hAdCONTeZoRULaaSRb1+MiXzN1czgABQUpkYpxaSwfLafMmj6/PB6BkC/6WMsjKaGeWEQ5xz9VshWJ0ABhxsxoSeA4+d/Fmz2Es7GJQC5qbHWcrwZUzuIPEGUq7meLWnHGi2KRWlJAgVAIxTOb3Mc0Io0SaD+x6ERasrKIQf9kN2Oz4vzgo82IkZTQ2mhGWoU0I2Fv0ZLPuxHOAdpqIl84S533O+HyLvbgr1eyHbHZzQzOByvLgu0KOarmnaiOVgPeHZeYGrH2XjF78MFux0NgCjgOjM457hdVAzvDP3U49FmhLGO8xmIUuDg8XaCseCLZq3hcT4pkbKqGY4rPC0c3ovwtaIRatZSjy8eNpkuVnTTgM/3E7qpz4NBiFJwm1my3PIfxdJPasIR5JoAAAAASUVORK5CYII="
             },
             "type": "block"
+        },
+        "tropicraft:mask_0": {
+            "name": "Square Zord",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhEOuSqAewAAALJJREFUOMudkDEKwkAQRX8kREOKIBYeYO8gWHkTb+khLOyn8RyiCGvjhD/rbByykCLLvP/fLBA8aRwylp40DllE8qIQBTXksN+akNUcrMO7TYfL9Ybz6RhfhxvZIrSOgjxc/nvrTNo6UHsD/VLf5lCziJhmEfFhM/CFVZNDf2Bu1Ua+M49YwrXXLk1cbQBIfWt2ZnU2ceEyxNOuNs+ZsEEIroVE4MYLQbcGXk/cH+/mX8AHeW/9C5tFseYAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:mask_10": {
+            "name": "Ashen Mask",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhUTvkAppgAAAQdJREFUOMvVU0FKBDEQrHRnXLJDFDy75Ae5zmHeMK9dfMIii7fgB/zBguCCTqc9SMbRmehebWhoKkV1p5oG/n2YvwgpJS11jHHBtzVSwYa+g4iAmZFS0oVISkmDd1PO8V270V270eCdFt682TRBzhk3DeHpdJ7Uh74DEeH55WxSSlom+RlUitPb12PwTmUcQVAE7zTGaEQExpi6ADN/M802FlsyIGQE75SZcf/wuDCSAICI4Pmz89B32B+OUAVec8a7KEQE+8Oxvqbg3apZwTuNt63ikl2X/M3xi2K+1jleE7Q1oXEccbe90sYyRDI051Ue1QSstbCW0ZKBArhu+PJbqP197RY+AEJwoBcrD9izAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:mask_11": {
+            "name": "Ashen Mask",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhUgAZBIsAAAAL9JREFUOMvFk7EOgjAQhr8SgtrB+ADMbjIx8Aw8MM/AwNRncHcjkah1MFcLQksc9JJL00v//772UvhFGGPs/0yMMTbXmT3ut3bOJImJ66rk3A/qaxIhiJG4w5JTUa4zCyDryMQXSfp76Sr1RcxcZ/Z02H2YiCgoFswpvqyrx+RT+KZL+tEY66qkaTsuw52m7QDQaXDSb4P+9qBpO2dSV6WrR2Pu1dfgA6SA66jThE2iuD5eGrlGKFTowxRFoWIGT5vVxINXRHDyAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:mask_12": {
+            "name": "Ashen Mask",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhUtfyE0DQAAAKlJREFUOMulUzEKAjEQXBESEu4gCnYp5OpwgqW1z/UhdrbzDGtBxiphkeNIcttsip3Jzu6sSGUAoPQGAKbg2EUCgNEbpuBKbiaJ3jATAWjvREvInWSSXQ34fp0lmL2IiLw/3/J+PF/r4BTc4s+6g1XdeogasAj+L9Bry2SrOs+D5XzwnEbLabTU66va8+XoC7DZOFqnzl2O0xPvtm30hrfTsM37m6+vtvYHE/C0R8SxmdoAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:mask_1": {
+            "name": "Horn Monkey",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhEr8i5UPAAAASJJREFUOMu9UtFKw0AQnLtczlxiCcRPOBISKhKJHyH0ewP+RUUqLh5+hKCI1mR9utikkbYvztNyuzs7M5zADKpFxCYQeNt2o/fn9y8xnVXThyLRHIcSAND1Pe4engAAq3qJg7BG8c1Fwk0WszWKnXO8S3yQoEg0V4tob/loWKO4SPRJy2JOBQC0948AgDzPZ2cCKdH1/bhBRExEXCR6UGKNmlXjnOO9XKxRbI0aSHwWc5b+JPASPcFcoH65SDRLImIvP5By5K9dbwAAt1cVPIlzjlf1Eudh8JsBEfFUvle02/OXmyzmOo0YAAQR8er6ElqpUaq+btcblGUprFGcnoUAgNfPLV4+vsVwvU4jbrJ48OVtHY06jYbQTl6e/gFf47/wA6H4yB/0Kdz7AAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:mask_2": {
+            "name": "Oblongatron",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhICm7GfkwAAAZVJREFUOMuNksFq20AYhD8pstbSJsZtoS9gLCqChQ/NO+jst8yllxLIO/hQY2pyWPoIhuKC7LWk/XtotUitnXZAh92ff3ZmNPAbsySSj2+1zJJIjDEySyLhPxACZDqWN4kiDAJSpeiT/pPAGCMATduyr058Wm8oi5xUKVKl6ObXEJVFzvP2xV+URc67dAzAuWkAuJ8ksjscg0sEQaZjUaMRtq6ZjmOc/HrQOcfjesvqYUllLd+OzUWCMAwC6qZhokYAHGzNwdY8rreURY6t64HCvwg+f/mKE+Fga/bViafNjqfNzufQwRgjmY4l0/Egk6AbdherhyWAl/3hVokTQY1GVNZ6NfP5fGgp07EsploWUy2ZjgddWEyH/eg+r6D/3//0WxY5AM/bF8oi5/1dSts6jq1QWUtwLRxjjPSXVw9LbuMb2taxr07eSvRaSVKlqKz156M98+PceDU3YXh9ufPZpT9LIllMtT/fTxLJdCxXKfrFaZ3z7eyjdY7wNQt9ku+n82DxVNdX23kx0FkSSX439ra62U+o5uY9I8yHxQAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:mask_3": {
+            "name": "Headinator",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhMYf8hXqAAAAOtJREFUOMuVkk0OgjAQhQes2KKNot6AVZOGYIxewot6AQ/hCmNYzC1cuXVcTR2RP7shTfvmfby+CEas3CiyiYJXPIH74xnJs3hIWGRzsomC8/UG04jAWU1jTKHI5oSIxENyowgRyVlNuVE0CptF8rtfp+Sspl4Sv0rDZSl2VlO51GHfScKicqnDEEZvErWGeKnqT8pRHPaXqobTzoOZJXDa+XZ8iees/sKXzn6VDuMfNotw2Vn9k0mnOwcpXfkJj9tFt1giy4GyD73/zW8rc0DE/tI0Q+GSDArlABbL5GHs4nb97dysLif9r/YNGcHdr4WJDi0AAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:mask_4": {
+            "name": "Square Horn",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhMnya56lQAAAMdJREFUOMu1U0EKwjAQnJTYNljbRwQtFQJevPkVH+g/PHnNSd9RBEVcT5vG0FTa4sKSkM1MdpYJMBDWWsLUmA3WStIscL3KaHQXmyKjXZWTtfYLrJWMkolQ8/GwB4TA/fXGrX0IrSRl6QKn8wUAYIwRvW2vlynxS5xaSWrK3O1758JgTr9trtdFOjzUUDMAbCvlzuqiI/bvRYfMUpoyd7L81SePgv2WWYZPNMpETMAko7zBA2SSsJ78cmWSdFeu7VNMsvVff+UHKhS6Qbl1GJIAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:mask_5": {
+            "name": "Screw Attack",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhQDuuwIgwAAANlJREFUOMudk0EKgzAQRX9CtAZrtWcQwYUL7TU8bukxiot2kWOUIhRRMl1IxNLYhgQCgczw3s8QBs+llCIA4D6NSilqm8qvMZeCijggYyBcVQ3xsAvQj9Nyz1wbAYDzufx8vaEsS7b5BiZj21S4dHcAQBLOslrTf2WTs8kk5VIs2c15XW814JxhHwh0j9cS0Rg4080ZAHIpqE6jL7rTFOo0op3gGCbtRl/vX9mtBkkowNgc+zmMH1MwY9ukN5mk01FSEQcLcYtqNejHCVqTG9GW3ZW4+Ul8v/Ubcw2dmB5fYuoAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:mask_6": {
+            "name": "The Brain",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhQRSVV5ywAAAPtJREFUOMvNkj1ywyAQhR8yIGPEWPEVNEguLYo0OUdO6XO4cbE38ClSZCZRZlPBIBzJLkOzDPAe3/4A/24dXc2n/ZaJiImInxYSEZ/2W+6MZCJK8WlxZ+RMPLaGx9ZwZ+SqiYgPzpcrAOD97RVOS3x8TdhsKlRC4Hv6we1zEqu/942eEeR7bxV7q3g1BW9VMono0SS/e2gSXgx7q+6KObiavVXr3SnxI/rYGj66mgdXL3cnHHbpMhqFw477RiejSDBLJRcAQI4+uJr7Rs9SiYSL+KVJ2ZFSXOVFOV+u6Izk1miEEEScjXz9dZYI8rhU2FJXPRrznCSEcDeNv6Z86mTZKzjuAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:mask_7": {
+            "name": "Bat Boy",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhQfru1UzAAAATNJREFUOMulkkFOAkEQRV+NPWOPgrhwSwxB1yILWKDHQK9oYOEhBJNh0fEAegggEWxbysVkQHRhGCqpdCVV/fP/r8I5p845pWREAP1eh7IgEUAliUuDRACLEPAqpSRIMzVaO4yZ+YCqUk0ML9Ol7MRg5gODUcZHGReaqVHnnP58d/Zgn9gfwCvc33YRyX0bjifsIkPq1uiZjZn7wHKl2EgQgdVKeVuEf7cRJQJzH3h9/5T0QKgmBtUNk3NrtJHGelVL9fo0/cNMnHPa73UQEYLCl0IiynA82RosZgajDIB2u52zK863YY3Wba69VbNat0ZbNbtO55xeHsd6cZRn8U9+30RRBxUen7N17+6miwKV2DD1ASMwGGUbgAKx3+sQRUJqDHMfEAFVOEkMixB4eMq2pH0Dvy6TVY1MQC0AAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:mask_8": {
+            "name": "Ashen Mask",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhQtZjoFTAAAAQlJREFUOMu1U81qAjEQ/mwTuirTlRJ8A6ErbKA9ePDmc/hsPXropW9QPBSW0kMv8zAKWRwPdkJcdbsI5pLJJN83+eYHaFmToRVcu7yjTuC7c87pqC+bzRaz8YGkjeyEgJnFGIOP719sdwcZIYSLJL0mWO3lYg4AWK0rAEBZlj38lzDvSJhZUrvIM1EpKu9EwmxMYsw9VusqRs7+xFlr8fZZQQlDqI/l6ME7kiLPZDK0wsyicrwj8Y7k+fFBmFlaq6NRXkZ98Y5E+0AJvSN5fRpE/1GfKEAfprvmJL0/+5PU2QQUeRbtNPLF0mgOlos56rrG+9dPvOtc0mZp0z7pPAveUUzqzQfrKvAeD8uuMGlJ49gAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:mask_9": {
+            "name": "Ashen Mask",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcIFhUFSpSc9wAAAS1JREFUOMulUzFuhDAQHNshiBikEzyAjgLlKCKqSEjhDTR5X4p0fCCKRCJaKn8jXZQryGFviggEyNYV58beXc/s7tgLXLmYKzAMA63tsiytd29cwKauID2BydDGvydie3BTVwAA6QnccYbvySzxURu0Xb8h4bayolsBAPgaJ7y+f2LUZiFt6mrTHt9nl94/+HTWaLseTV2h7XqM2mAyBF9wt2hpFFB2kHSMJa3tNAqstrOF0axU5gy+4EslzuXKkkYB3SehswIopQgAjkm4Aa33+ZzHIeVxaCewgbODXDI+JBbwrEF2kOQLjrIs2V55APAFx48mnM7a3r9Sasm0fpFhGBb/uh3rT1RK0fPTIzgDfjXBFwyagJe3j4vzsKkkj0O6ahpnUQGgKAp2ieAP3NLlLlL3k7sAAAAASUVORK5CYII=",
+            "type": "item"
         },
         "tropicraft:orange": {
             "name": "Orange",
@@ -651,10 +1049,25 @@
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBEKEd/7KkEAAABwSURBVDjLY2CgJni8R+4/qXqYUDTLSmMYQshQJlQnPEXRhMtQZMCIzRuyLo8YsdkOE6dL2ODUiC7GhFczmv+xiTHhd8JTTFuxiZHiZHQxRnTnMTx+SlJoMxF0MqkxgUvz45uW/7HJMZJjKP0TFD4AAJ5iYV53MHAJAAAAAElFTkSuQmCC",
             "type": "item"
         },
+        "tropicraft:pineapple": {
+            "name": "Pineapple",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB90DGRU2BJxZ82MAAAEsSURBVDjLnZI9S8NQFIafa0Ut+FFQSGssEusXDoLYrXOXDv4CBQd/gii62l0QBEdBcPQPdA6CilRUShYzlIZ2kIrgRyX0OoSipTdp03c68J7z3MO5L3RRcgMZ5A/4GaktbzAS/at7AujZ9mbZhOFYiA0qBUQLMp1FNhvQeOsRkMx5g5UC4rsK0ThIF9zPdv+/RMfRcsihSa92P+CnDqMGvFtQMzv7hWotLeO9NKKBiMCXox7uKi2DbMH8NBhk7mzCeAz2zT5ysHeCnNLgxYbjqxA5ANg9RSZm4MmCpRQ8l+DoXA1RAvQElIowNwvXRTAMeLRCbGDegbYAtg3pVbi5BT0eArC+BjUbVubh/gEWl6H6qgb4/u3BJbJehokxcBy4yPeRg8Mz5HY+OAe/D+5YCQVH5XQAAAAASUVORK5CYII=",
+            "type": "item"
+        },
         "tropicraft:purified_sand": {
             "name": "Purified Sand",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECgEiBFlUC/sAAALISURBVDjLJZPLbttGAABnXxJJUbJEyjZSx41rN7cAuRb9hX5o77kUKNDP6MGHpIFfkuxIImlK5HKX3B78AXOaGfH4/UuQUgEDIQS8dyhlsNZijCGKY7zzeOcJ9DjbIZXGdpZ0kiKV1G9QSEjMgu26xlpLCAPeeR7u74lUyvvr3zDGIJVGG02SxExnU8TL3T8hiROSJOF+9RUhBIGA1hoAIQTajNBDhJCSx81/jEcjpFJcXXxE3P77Z4hHY4RUaKM5Hg6k05S6rglhQEqFVhIpNeM4orOWYRiQUgIgl/kSRGCaZLiuJZ+/Y6ymZOkZy/kF2fSM1jo616GHiL6V7HY7tNZUZYncbn8wHkf82D9xefMH+2qDMB47HGmOLVWz5efLS+I44mHzjW44kKYp3ns655BVVYEf461kdfc3RVHQdS3OORpfQIDnlw2xmfPp8+9MJhOy6TlSKvLZO8Tj9y+h7z3TKKO2BUpJmqZlMV+wyDLW6zXHssMkgd4PJJME0Y+p2x2L9AxptGEsZ4xGY6bRAh0SpJDIEPH8uCebnXH96TNKaaIowjYt3jkAGl+in1YrTk+XtK2mcSWBQGRmEAYO3R5fHJHlBikks5MTimKPFppDVbPMl4jNw19BeI2jIdYzVi93XL3/yLZao0NMlmegOpq25bUqUdrQ9x4IKGWQVVmitSGOIzabNVmesy1XGG3oRcP+9YX9vqCuay5vfsVai/c9zvVvHfx09gE7HCiLig8375FS4P2A1hqpFLvtFgCC4NvtLWm0YD45hTDQO48I4Wsonh54Lp5IJxPatkUIgUBwcf4LRVmQzRe81q904YhSguPxyDTKqarq7YW27QiyoXMdaZRj24bRRKC1puscWhl873jTnbN53qCjgVlyimxsSTxVIKCuj5xfXROlit1uT2LmAJykOW3b0vuB12bLLIsYjUY87x75H21rcpRLHGfiAAAAAElFTkSuQmCC",
             "type": "block"
+        },
+        "tropicraft:red_starfish": {
+            "name": "Red Starfish",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAm5JREFUWEfFl79qAkEQxvNiwUKQoKRQ4p+AhS8RfIQ8gOALpJEEG8HGJtgEbFKGwDWpfYnJfOPNZm/v9nZyhlgsF9y7/X7zzezs5oqIrpqO95sb/rT59/i2sTg+vizAfk+02dC5EM0dyMUBcA5EYwAVzsbj/wfwxS8OAJhzIJqlYLsV0azfF/vPqYNmALwDNGonzlBNeoID+E0kYrsXvUuBBYLf8R0TAFlwOpXhJnmb0W5XstcHrfo7dCG7v5c18CQAPj1R1u26AH5ScDhIY5HczmYFGF8I8/T8TMeXl2L+efHPwcCJqbCIQ5DH13Aoz5IDjpohBEAhPBD9HVGE4rrg52QiEBiAxLsAgXDolmqWitDtcaQkbzIp2+vmAeIi5pQiBX6a4rsgz39YG1YYCL9dX7u0oJ5C8fRpuFo5esm9V8ExkFA41SNMfcBvvb6lpbxy1FoDUnztdrI3mAA0Zxb7YbtVPJ2C4LZjBbBEHt0FsXZaJb5vtejj9ra0xf4FICxIwBQaliH/5hRgYUSKIe2Ui00jF8dGIyJuWvLkkap8Wx/w88+iCqBPiOhCYvl8TvTwICAyh7NkufyDXZDvfekDvLiL/PW1sLiDeHw8uYF57iOpIzq5DWVL5eLHu7tTdIG4iOA3CGOwG1YXagFkkXxRFfetL0W3Xp+E8zRYasEEIIsuFunbL7uAd4+9HhGO94r7RAgdBZCFcBzDfhaX49Xwb5hGLRDsCEDqXIs7gEtHfpuxioctO+t0xA2MGEQlgLzM9jkAQ+QFdxC5HucchN6OqhyMAsB+SxFF0+LdKQEgd8KKQGproLbija6kgvgGZZlb8UhZCfwAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:royal_starfish": {
+            "name": "Royal Starfish",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYBEQg3OAjR1AAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAz0lEQVRYw+1W2xECIQxMbq4H27ALsQrrsByrkDKuo/iFgwxiyEZRh/wxB5vN85YIMIl7IdAWGmzDCUDpP+zOgpZhlmASGE6ArRMQTsf7OV6uxGEzYa2tjWYF1WzLhL2mQ7qYRyaRBHVUZqoMjJ8B5Q9Rqzl+2QMeRFqO1U1oIaJx3D0FGiI9js1jWI4gOoq/tQlrCygfN8uveUE6nMPGOYmPCJCaCGl9c89Ardnengmt/LLItO8Xpb1ReYnVB8BeMMsbdyAXEiiAWxmm/bXdACNarxOD/2erAAAAAElFTkSuQmCC",
+            "type": "item"
         },
         "tropicraft:sapling_grapefruit": {
             "name": "Grapefruit Tree Sapling",
@@ -686,6 +1099,31 @@
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcNEzMbQlAQaQAAAahJREFUOMuFkrFrGlEcxz9PL0ZsPTQupadSHEoCHVLaJUOhdCld/AccXLqZbp2EkEG6yI2RLK6BLiHQWVyKm5CxUugFgnaQtmevopeL5+tgPDz1zHd68L7f7/t9v+8Hd8jVkpIAaFVVJspRmShHVzhiLp6MTawfCjvP4vz8/o/HT+MAdL9ZHtk5ccWyQQjAKJliigo7CkbJFMf9DMal6YmcE1c8euICkChHpVZVpc8AoPvREoNPtuA98vTFFa9vE/y6HnkvvfocIasjR9btaoQ50roq//Zt8k04azsiqyNv7AfMRfnmjHewn+Ow3hEAyqKBY7tMXcmXN4KjjCZpQeWiJ7I6stjSIAOVVI+vu531Eywichj2NZ7eU72zUTI9ncIGRB8q2MMJ6T3VJwrsYBmLu2FcmuSeJ1eMQkHirI4sNGK8O5cYJVMc/dZmJksLJ4LExZaGNRwzcaco4RAXb/9w3QHqfo1YN3ahEaOS6vHhKslUSmrNQWDUtREqqR7UEeMbh5HtbKpp9RcWS9qOKAys8UaD0KbLLSXMfQjMVngZ8bV91nbWcv8DXRmkgWVXFngAAAAASUVORK5CYII=",
             "type": "item"
         },
+        "tropicraft:scale_boots": {
+            "name": "Scale Boots",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBAyLJHOsJwAAAE6SURBVDjL7ZHLSsNAGIW/1LbaNBGNl1ak1EZQEES6EF32HVz7iO58gLyACzeCUOLKovRi0txvHRfF2hjRrQv/5Zk5Z77zD/yP9FVQri8EQOKHRDf3EsDq1ZlQW7tY/WfS24ecp5xz93TRvjzBHdn4gzHDpSOt02Rrf4dHNxQYpvR9ADCbzSiXSjmtIq/hOi7CDgsVCgFxHGNbU5yRtdASP0RRFaJM+j1gpVwmmDg5rarIcwK3SJBj1Q6aZGlKTVPJouSTyvUBkNfrPwT0dLHdPSQI5q+0ukd51GoF25qyd34MPV3kK/R0sXnaJktT4jePYOIwuusvzNHYIY0T5MYGqRdR7zTwQGCY0mIH/otF6obMAO/pleWvwjClAYh6p0FNU6lp6vzO8hKjoU00tBeGQlnDlDwQH8a/M+8pRYggUE4IeQAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:scale_chestplate": {
+            "name": "Scale Chestplate",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBAxLyPqsuUAAAG0SURBVDjLzZJNTxNhFIWfKdPOTN9iHaA0qRqwQZJKAvUjutAIJCQuujDBhb/Qn+DGFXsSDRolkVhbQCedYj+mnS8yzbigM+nQunPhWb25973n3nPuhf8OyuutUK5VwqnETjlkpzwVl+PHuGhj7wkAnyAM3h1LUa76apuFUoH3vL0iOahLMYFcq4QIhZvLi3hDF8caTA3QMzsMewM297eZk2U+QshBXYonKN69DYDZNMgXdB7u73KkZsKRdwlCIZ3J0GqcA+DZ7rQEfyKo5rKcHdcRRf3Kl6wKgF5cAkki8C9pNtsASAkPxjIA8gUdZzAkO5/DqJ+hCg3PdlGFRufraexBalLnizcv2dx9TM/8jSo0FE3B6vTI3sjhWDaVp1Xu3CsnvJESK6lVwvRijvvPHtD68Qtv6JJf0ulfdCmtr9Bq/KT14STunvAgwq31Vb4dfmHjeRXf8RgFI1LpOYzvp3SNC/56BxHcgU1xtYTZNOi3u2PXPeS0jCI0AqzE/9R1Am1ekC8s4DseqtASuclNzfQgOtm1vUcALK+UaHw+od/u4tsugWkl9M8miO5+Fq4V/xP8AZhzn0nduJPOAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:scale_helm": {
+            "name": "Scale Helmet",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBAxEnuC/vQAAAE1SURBVDjL7ZG/S0JxFMU/z94TNaQtCMTCajBejdEabSbB+0+CoEGa31Bbf0FrQbg5JGRLDUGbk1Fg0C9N8z3STL95GwTp+foxBx24w73cczj3XPjz0DxdNycYKY10UvREDN57ENBQlTp0OpAtarZTkMzY8oAX8AgYKY1uTvS5BKr2jGo4qHoDomH02UmGyX5Ypuibq0I31y/LFCxTbKcgtlMQ1uaEdFI+U/QvhdZ34K4KB9vYrTCZjS2CU+MQjUDF+SEDyxQiIQKhMCOjBqIpAFTpEX1+hsjSAu7uPpxcf5MBoCdiiOsysXeGKtdQpQfip2V6t0+4h3mfWd8J6r4K9RcA4sdXg7k02+iLSVTlwrPvc8DrGwT90UizhTo6/8VBtqixMi0EDW7c9vC7+unnLzX+4cEHL4l3mkbMDOQAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:scale_leggings": {
+            "name": "Scale Leggings",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBAyElCvrTcAAAFeSURBVDjLzZJPSwJhEMZ/+0fNalO03SKL1AKFCPoOnTv2Nbt07NIXCEKoQEqt3EytTV11dfe17RAE+qaXLs1thpnneWbmgT+GMluInh6FfruHbsR/HRDnN1Mz+lRychCK4z3MvoK5ZeFX2mj7Jk69hbllIboe1YgWBmelHxB1liH/prK2+z0cFkxiQiG1bc1dQZ8tLGctGMMwkyBS7XLrO2iuT+GwyH2pTOD05wMI1yMewJVdIfbQYVBtAhDLbbCSNMjnsjw0XYK5NzDi3HZf0Vyf8VsPLisKwADCQcelVioTBpMpBdINNvoqO8WctOuw1kIU1xGuNx9AuB71xCc125Ya0xmLtKdJ71VnVzDGCvn0pqTg3W7REd5iBQAjPeSx9iQxpTMWSV02lwSQHKtMjKjE9Gy/4DgfiwH01SWEmLAfTUmNbbtFdPS52EiiP6JxcU3jF8cFd42p//+f+AJv+5CQcj3WdAAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:scale": {
+            "name": "Iguana Scale",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBQ7MFME/0YAAAEHSURBVDjL7ZFBSsNgEIW//0/aUE0okorSWrQYkCwE8QbiQlcFF668hEfwFl7AE3gAd7pwI1VBQSvYWm0RdNGUxCbNeIEUA25c+JZv3nwMb+Bfv5aaOmn6Utj22Njf4dWo0VvYy8zqLLO0WReAWGvqdsiWU+Xg/UTyAZq+hEUwKrP4ux6dwgiLEYmlaPSP5WfATR9SobIyTzQIcMWlo22uzDKpLua4YH0RBAZvn7w4q8RKc2a46LHgxMMcgNM7RfDFXHUJ7/ySCxUxUTHtcZnb2qHKVSLJhOX7Lg3HIXocQvpEHAeZUTPTffhQrZlnuXZNWAtRbRD/KP8bAaTVV7ZVQvWSqct/Q9/OoFKv5zNvvwAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
         "tropicraft:seared_marlin": {
             "name": "Seared Marlin",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBEVG/J0zcEAAAJzSURBVDjLrZLLS1RhGIef7zuXOcc542XGnLxRUC0KEYRaBElk1CL8I1pEEVa0CPoHWiUEFWRtW7duJUWUUZgWIkKJoTjqzDiO41zOzLnN10IqqWhTz/LHy8PvfXnhHxG/Bm/uX1Mxp41GeRslwLASxGyLSiGH1CTDNx+JPwpmJsaGGqGcBegdGAEB+UyGjq40vu9RzOfQdUFzZxnf8zlz64kAkABTD68rT5mzLV2HoP0wxc0NFt5OsTg9Ta1SZu7FKxJtHexkCxipI+iGwfvHtxWA/vzORWUaksDpw9PiuIVVVlYyhH7ws6YQaIZOfmWNrUyWwXPDlFc+ASCrxSw0I+xgk65EHNOMEQXBj+WElAgpdjOliMIQd6uEk0wzMzE2JPsGhqm5HpuZZXZWZ+g92Ilp20gpGTx7mq+zHxFCUK9UsZw4QkqWPs2jx/fRFLFZubQwje20ErMdQs+lkl3k2MkT2Ik4AOXCNkopcktLHD11EgCnvQ2nM03gueg1t87yWo59qSSaadGoFDHCebr7O5BSYtoWkR9SjyLmJl8yOHIakwqlL++QKPSi62PHSiwWC9gxk/79KfywhhXziSo6A8cPEMoUzahJsqeLwHNx19dpVEt8Xs3vnmr80nmFUgRRRDJuYJsGLU4r3Z1JNOWhGRZ2RxqEhrezge95lMp1sqXq75947+qoarg10ql2nHgL3ckECElQd7EsnUbDJ1A6tVCQy+d+F3zn7uULyjQMHGN3JNHaRl9PN26tSrFUolqtkftTg70sfHjdPvn0/nYU+LTaGrapA9AIFfntCs2m+rtgL+NXRpWuaQBousGNB88E/4NvaaIPSKelxvgAAAAASUVORK5CYII=",
@@ -701,6 +1139,16 @@
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECgAmFs9D1YAAAAFjSURBVDjLjVOxSgNBEH0XVlnjnY23WF1hExACAa1MJ6RJnVQWgumsbf0IO/MRWqnYBGzETkE4EK+xuEp20+Quy3JNLHTW2yOJedXOMrM7780bbzQczFIlUUYUCgCAMQYyz2xcRaokalQg/ABxoiD8AMYYpEpC5plNTJW098YY+wijg8wzNBuhLRJ+AADgnNtkYwziRKHb/uvIO+sfzCio19exCFoXTky5rNdpoazB6cWthyW4uzy2H3LOwag4ThSO9nfxH4giACDPwEjhKBSOOItQnQh7eH6fy3ERbkZvrgbd9p6TcHX9svSBXqfl+IBVTbQKyjVsVe5lL5BHZJ79aKB1sdQDZdw/fThe8EbDwWxei1EoMI+e8AM8vn6CtKuRv2ka1VHRnpTbbjZCuxOMc47o1+/0Y3XWnHOkSkL4gbMbAOCdnxxaChtsDePJFACwvbWJ8WTqaKN1gfQrQ7QTWA2+AbkBpcnr13r1AAAAAElFTkSuQmCC",
             "type": "block"
         },
+        "tropicraft:smelted_zircon": {
+            "name": "Smelted Zircon",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QcNECY6O8pYegAAAJtJREFUOMvNkUsOwyAMRI1VcYYIcRNvcv+zOAgiIbGATFf9pyRIXXRWeBg/GUz01xIReO/Ry/C3i3mekVIiZibnHIYAIoIQwiPETNM04TRgWZbPIPPYE86qC6i1HgIuvWYAh5BdAABqrZGqEgCy1o79AQBS1XtdSqFt22hoC621F6+Uch5wCz9DhibIOZt3b11XM7TGGKPZO/9cV986UbrFZlvgAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:solo_pearl": {
+            "name": "Solo Pearl",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBQKNeUzDHsAAAHgSURBVDjLrZMxbxNBEIW/2T377kjsxAQpSiQk5JiSjp6SAn4AiJ4aUVAhCos64k9Y4ie4ocFCgsoFcpOSCFmIxIkvie98d7tD4XDCSYACptvRvHnvjd7CP5Zc1RwN+hpd3yKbjAHw3jE/Sbj78LH8dcFo0FezvkkQ1KueZieoKsP373j07OUSxlwE29YWYRgTBAHWWoyxSNSgPJvS6ezw9s1rvVLBaNDXPGrQaLQgjjHeI34xq86Bd6gryJIJnz99qJQYgL3hRzXrmzQaLUwYYrxfAI2AgFiLisHlKWGzRaezQ2+3q9WC4vQYEYMxpmIVr4gqztrFWwRbj/F5RhjYykLwqxnvPdaCqFbmbOlQVyJikFqIoqjq8hFrq+sEtoaIwRU5KKicb/COPJ8vLHmPT88oTibLCubJIWXpEGOJwrhiEBFEDP7gK2VzA7xbgGrRZQvB7BhjLDaKKZMDmM8Irq3hgWB1jXL6nTKKScb7REW2bOHOvQcyGg5Jp0donmLrIfWNbdQasIaiyCnrMfWoSVSmpGnKk+ev5FISe7td7XTarNzYJpt8o3nzNqrK/HSKJofks4TJ5Ij7T1/Ib6Pc2+1qu30LgJUwJDudIucH3fsyrpj/+Jl+huRiXQT/l/oBlZTPzsxZSS4AAAAASUVORK5CYII=",
+            "type": "item"
+        },
         "tropicraft:thatch_slab": {
             "name": "Thatch Slab",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBRMSE0IA34cAAAKKSURBVDjLVZNbT1s5FIU/2+eWC7kRkkIooMBUQeoj6lMf+t4f1B/RvzSPo/YFqZWqqTpq0UBKgABtCIGTc7GP++CTGdWStS3Le621194Wb9+8tq9eHPDxy4SDnS6fT644HPb5890/HD3f4WR8wx97Pb6eXvPy6IC/jr8xerbJ5GLGYLONfIwzhAAlBUHgMZ7MANjb7tBqVNCmAOB8Ov8vVqOA8cUMIUDWayHWwvuPZ1hreXk0JAw8ziYzqtWQRZxRFJaNVg0ATymUkrQaFQBklmuEgCcba3hKcfxpjAVajQiA+0WCpyS3dzEAu4M21lpOz38SBB4SQAjB9PYBT0l2Bm0A+t0GAIO+i4vHBGstX06m5X0TJSXy8KBPqg1PunUsFokgSXN2tzqkWqONLQHXABg+XacoLPNF4kpYHVZrZdrlzRxPSJI0B2C9WUUIwfmVM7NRD5FSIC+nc/JUMxr2ATj+NKYaBXy/nCGAeKl5iFNOvv/AmILAV8zvYhprpYkrhjQ3xHHG3vY6ALP7hMJagkDR7dQ53HcEzbXS3IeUorDIWi0kCn2MNgCcTX4CkCQOeKvXIAp9EKCUZDK9Z7PXxBauVLnVa5aJM6rVgNGwB4ApnNyz8x9MbxcopQAY7fdY5prLm4UDqER+aZ5TcDd3/a5VQ5SUJJkhzzXD7XVybRhfzHiMU3xfOgAlJVIKOuVkrcwRZVdG+07Ruw//goWtfssRVAK0Mcir6zkW8HwnMQx9TFGwWw4UQBT6LJOcLNfsDdooJbm4XuAphfz72xW51u6l5bekLDfcL5YAVCKfKPT58HlCFHj4nnIKbPF/VpZrTFHwGGcsE7e7nTraFGy03WfqNCtYICwV/wJ3UiKzmIg3vQAAAABJRU5ErkJggg==",
@@ -715,6 +1163,11 @@
             "name": "Thatch Bundle",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90EBRMSE0IA34cAAAKKSURBVDjLVZNbT1s5FIU/2+eWC7kRkkIooMBUQeoj6lMf+t4f1B/RvzSPo/YFqZWqqTpq0UBKgABtCIGTc7GP++CTGdWStS3Le621194Wb9+8tq9eHPDxy4SDnS6fT644HPb5890/HD3f4WR8wx97Pb6eXvPy6IC/jr8xerbJ5GLGYLONfIwzhAAlBUHgMZ7MANjb7tBqVNCmAOB8Ov8vVqOA8cUMIUDWayHWwvuPZ1hreXk0JAw8ziYzqtWQRZxRFJaNVg0ATymUkrQaFQBklmuEgCcba3hKcfxpjAVajQiA+0WCpyS3dzEAu4M21lpOz38SBB4SQAjB9PYBT0l2Bm0A+t0GAIO+i4vHBGstX06m5X0TJSXy8KBPqg1PunUsFokgSXN2tzqkWqONLQHXABg+XacoLPNF4kpYHVZrZdrlzRxPSJI0B2C9WUUIwfmVM7NRD5FSIC+nc/JUMxr2ATj+NKYaBXy/nCGAeKl5iFNOvv/AmILAV8zvYhprpYkrhjQ3xHHG3vY6ALP7hMJagkDR7dQ53HcEzbXS3IeUorDIWi0kCn2MNgCcTX4CkCQOeKvXIAp9EKCUZDK9Z7PXxBauVLnVa5aJM6rVgNGwB4ApnNyz8x9MbxcopQAY7fdY5prLm4UDqER+aZ5TcDd3/a5VQ5SUJJkhzzXD7XVybRhfzHiMU3xfOgAlJVIKOuVkrcwRZVdG+07Ruw//goWtfssRVAK0Mcir6zkW8HwnMQx9TFGwWw4UQBT6LJOcLNfsDdooJbm4XuAphfz72xW51u6l5bekLDfcL5YAVCKfKPT58HlCFHj4nnIKbPF/VpZrTFHwGGcsE7e7nTraFGy03WfqNCtYICwV/wJ3UiKzmIg3vQAAAABJRU5ErkJggg==",
             "type": "block"
+        },
+        "tropicraft:tiki_torch": {
+            "name": "Tiki Torch",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsQAAALEAGtI711AAAAB3RJTUUH3QUVFjEoJhD9BgAAAMZJREFUOMulkC0OwkAQhd/s3gBHuUHPwQHIJpyCBoloNRWEI4BDNyRYBKngz6MRZItqVQWqgyJQQpd2O2qSme/NewNYFLPLr17YCOD4bhsL8MFlbCwF/ECVYACQdeFoPWGn18EqEeiHMTUSuCZbRpEizx/wRgv6nIk68P12htYZ1GBG33P5L7PTZWidYajm9GtHmi5zkSLeXTD2llS1J0y2ASCcRmRySabMVbYrI9TJbPz2/hSyHyhuwpGN7ZJAGxgARBsYAJ547XK9U5/IRQAAAABJRU5ErkJggg==",
+            "type": "item"
         },
         "tropicraft:umbrella_blue": {
             "name": "Blue Umbrella",
@@ -739,6 +1192,46 @@
         "tropicraft:umbrella_yellow": {
             "name": "Yellow Umbrella",
             "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYEACwBLGCcngAAALpJREFUOMul0j8OwWAch/HnLaOExeYM1l7BJg7gAA6i4gZWFzAYJDXYJRaLUSX+LYRGmlbjzWvBUCpv377jL/k8wzcvZHxb1VEb1VS9flsBiKxYcsC/xISBZDwo6QeS2K65DE8+limeRzFloGiCl0HEMbzTqlaEMMHeC/8dUQenBnQx8HtEXZwaWE1tLQxQSB4mrqO8tcdiJrnVG1wfMhV/bfDG+90ZpzvS+mQiD/4ETDGAyIMBrDwY4AnjidDszlCPjgAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:water_wand": {
+            "name": "Water Wand",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBU0J1aNDHkAAADrSURBVDjLY2CgJ7j5sPb//+9z/yOLMRGrWblm23/mX38Y9Iu5Gb5+nPefJAPEJx79z/PmI4P7QluG+2aaDFblnAwvDjr+J9oA9i/fGb6I8DPctdBiUDx1neEvKzPxXhCfePT/e2lRBs6PXxj0tp1g+MPOyvCdnwcuz0jIgO9vi/6/+szO4Nehx/BFhJ+BgYGB4ahrN4OE/X5GBgYGBhZCBvz+zcDg3WvI8JuPneFK0QmGj3fPMEiY7mckKuT9C7f///6u+f+nF6X/X5z2+k9SnGvZN/w3Vcv4T1aC8S/c/l+j8xR5mkdtJh0AAFVoZ1+d/zKuAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:zirconium": {
+            "name": "Zirconium",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBUkNe/2b2AAAAGASURBVDjL3ZM9a1RREIafc8+NGzYkMUGJWgVsgiD4ESRgJxFTpAz+A3+CoHVSiAbxD4i1WoikELFQg4VgynxZiBiipHDZr+xu9t5z5k21Ekx2ia3TzjvPDO/MwP8dkgYkeUn3JP3UWum53m+f0OcddzxA1Bt1opZJn36FvzVJj+4T5MwAWHUXtluAvJa37hzUdR0lW/uxFFvtWdv5TbVcgbFznB08A818tVQuXTk1dykHSI8qrj97d7m1sjmrAM5EaTilGPfAInh97BR3BZi0qBwSQa3g2EsdtJsQY2Bw6H5PDypP314HbpA6GOqjMuBJBNGMb7WtB+7qyfpB/aEJ/Gj/orUCacHT8A45hwsBk5quL13ouYVw98UFv1GeUjNgQDURIcZOev78ral2T0D66PZ6frp/xQG7WaQtIQnnqIwOjzw8yq9DHjifPJGDetErWiQzyI358elJOxYgifa9UUzJPV/N9LKR2cVrczcf/9MPbL7+4BT1B/7l1XLXg9sHIVjB+agJlQUAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:zircon_axe": {
+            "name": "Zircon Axe",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAmHUoko+YAAAEmSURBVDjLpZE/S8NQFMXPzcMo/qmgvFIdRERUhGKFuDm3SxZ3F4uDk7j4FTo6uDr1I3RV0K1QCEppBQfBxUGiUGOsgb6895xalGCTxjPdA/d3L+deQgIdr27on/788YH6NSWBg54YeCElnjczICJcXTaJksDMMBAIAZMZeFqfxuK9By8I8LWzAGM43MMYY5BKRWAACEM5PMLh0ooWUsJkLAJ3rRymnJf4G+xtrWk/O/EL/tjOYq75hlCpvyP09T5v4qJ6hlf/c7A5c+ciVAq1jkuxA9qTyyjvn6BcPUDXymH21gUA1Douxb6R27Ye5xye48DiGjfX7Ug/JYH9Voswioqlgq43Knomn9cYVdy2db1R0cVSIR28e3qUfnNq+F+ZASB1ZgDfUniRicF42tsAAAAASUVORK5CYII=",
+            "type": "item"
+        },
+        "tropicraft:zircon_hoe": {
+            "name": "Zircon Hoe",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAmLBv6o9wAAACzSURBVDjLY2TAA/JUNP7/+vMXp/xNJXYGRnyaYezvv35halbkYBC89Aa3ATBDHr59hyH+RluIQeTqO4aN71/h1Y8BzMxV/5tbqP1fva7kv6OTzn+SNLu66f8/drLt/+p1JaRpZGBgYLj/bM//Yyfb/ru66WNoZiKkWdTH5//zx6cYnj59x7B710XS/Czq4/PfpjTjP6+uLunOpkgzLMDI0owvwLABppEeYAwMDAykBBg2AABgqW9WCeo86QAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:zircon_pickaxe": {
+            "name": "Zircon Pickaxe",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAmDVeTs4IAAAEoSURBVDjLpZK/S8NAFMe/L9iW/ghIyqFIF8HBJZJVV0uCkMmt/4STq5PYTdzFQVwcBMFRcS6kdBA6iUOHmta2UJA6nvecDNbkmlo/03F33++7931H0HCwscmjyUds3yDCcMvC+eUp1teqtKQTA4AwS3h+GybcsNDvNnFze8g06wUvg1HimdyuQMpPAIDW4De7VZu/19mgB8WMYi4LY16Di6szHJ/UoBRPZzKP2PUc7nebCMMxpFT4E8L3uRHU2fWcqPSeWWavZPF+eZUpTZwTAu+tFibtNv00SM1AJ44GWSxAMScbuJ7Dd0c7WvFyIQ8AyGcycXGn9xjrOYnaSoVjUxC+H6X9cP80M5/rwStNfaS0nnXQf8QRjaDOpm0zFsAAgDAcL1YZwBcQ04ekneTGFgAAAABJRU5ErkJggg==",
+            "type": "item"
+        },
+        "tropicraft:zircon_shovel": {
+            "name": "Zircon Shovel",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAlIDlhvDQAAAFOSURBVDjLnZG7SgNBAEXPzI5ZEiJ5gAgSUDGFFum2Eq21CBZ+QMDKwj/Q3kZs7Kz8B8knqCCKImmCBLSwEFeCEDeSZGfGQtdC4m7iqQYGztx7B35Rm5m1W6V5y4iI6LCWLVoA5Ti4yiGXTnPy9CCSBBJgPVu0oTEYINSaXqhpB11GSSIBUkqhpMQYgwW01nwMBrx03hMlcmdh0bpK4SpFynHQxqC/L/VyiXbQjU2gHAHp1ARKSoJ+H2stA2OQUhKGGql1fIWjVlPkM2kQ4CqFcpyfOloblJSj/cL2XNm2gy4db5ow/Hq13w/R2gBwftYUf44IcPzYElnXpXDjU7h9JXP1jDGWg8Ma9/lycoJhrKwu2bs3Rc7z6Pk+fr0uxhJETFYqNk7CqJKLy327u7dph26QRKfREPXTa6obHlPVqh2rQlwd8d86keTfRJt8AmX5kk1xZCv/AAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:zircon_sword": {
+            "name": "Zircon Spear",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECQAkN6OpCLIAAAEYSURBVDjLrZK9SgNhEEXPt1kTCFhYbGWhYBBBAhaidmulCIuFhU8gIhY+gPapfQifQCwNuIWBSLpgvYVEO4kIC9nvZyyiRSC6u+qUw5x75w6jKFlnjRUxxmCsIdOWShl4rz4n9ZkKzjm0cWSZwSsDS7gIgDYOay0igl8UBgVApi3WCVo7fN/77P5Qm1vLUq36+P44ba029tRxQjsdqlyB5PlWThuHCEC4gI4TANrpUAH5N9g4vkQAjWM0MhNwrkAQRVILAu6X5jm5OiJNRxMw8P0NvuC3Xo/3fl+VepbziwPpdFsy22xK3qw3zTnaX+fmupiz+uva6l8y7+yuFc489VE63ZaE26vlYcB7eXpgMHglvntUvxH4AGxRiaMEW/7SAAAAAElFTkSuQmCC",
+            "type": "item"
+        },
+        "tropicraft:zircon": {
+            "name": "Zircon",
+            "img": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEAAACxABrSO9dQAAAAd0SU1FB90ECBQ3Cjm9afgAAAC3SURBVDjLzdOxDoIwEAbg/ww6qJv6FCwkvoWDi+9C4hM6OTg54YZboSSi0LR3biQEQTqYeNvdtV+uuRT464jDSA7LjQydmfQ1jtFW8iLHjAj7xVq8gDiMJMtUk0+JsJuvZDSglOrUAiK/J4yNQYAtfwWCvoazDBFByew/gYiAHSPRGndXwYr4A4nWTZ4OIB+BW1HAONeqpa4aDzxqAwAtxPhMcIbpLP1qnuS1xpN9NRcudUk/+3BvjKNTrtJ5I1IAAAAASUVORK5CYII=",
             "type": "item"
         }
     }
