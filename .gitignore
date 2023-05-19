@@ -5,6 +5,10 @@
 .idea
 
 # Items data
-recipes/generator/data
+recipes/modsdata
 
+# Pycache
 **/__pycache__
+
+# TODO
+TODO.md

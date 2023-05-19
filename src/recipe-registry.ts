@@ -1,6 +1,5 @@
-import CurareMixRecipe from "./recipe/curare-mix-recipe.js"
-import ShapedRecipe from "./recipe/shaped-recipe.js"
-import ShapelessRecipe from "./recipe/shapeless-recipe.js"
+import {createEl} from "./utils.js";
+import Renderer, {ItemRenderer} from "./renderer.js";
 
 
 export interface Recipe {
@@ -23,7 +22,7 @@ export interface Item {
     name: string,
     img: string | BlocktextureInfo,
     lore?: string,
-    type: "item" | "block" | "slab" | "stairs" | "plate" | "chest"
+    type: string
 }
 export interface ItemStack {
     id: string,
@@ -34,27 +33,58 @@ export interface NonSerialized {
     data: object
 }
 
+export interface CraftonExtension {
+    /**
+     * Use code below for relative pathing of all assets:
+     * ```ts
+     * modulePath: new URL(import.meta.url).pathname
+     * ```
+     */
+    modulePath: string
+    recipeMap: Record<string,RecipeSerializer>
+
+    stylePath?: string
+    jsonPath?: string
+    itemRendering?: Record<string,ItemRenderer>
+}
+
+
 export default class RecipeRegistry {
 
-    private static readonly recipeMap: Record<string, RecipeSerializer> = {
-        "minecraft:shaped_crafting": ShapedRecipe,
-        "minecraft:shapeless_crafting": ShapelessRecipe,
-        "tropicraft:curare_mix": CurareMixRecipe,
-    }
-
+    private static readonly recipeMap: Record<string, RecipeSerializer> = {}
     private static readonly items: Record<string,Item> = {}
     private static readonly recipes: Record<string,Recipe> = {}
     private static readonly displayNames: Record<string,string> = {}
 
-    static registerRecipeClass(type: string, clazz: RecipeSerializer) {
-        this.recipeMap[type] = clazz
-    }
+    static async registerCraftonExtension(extension: CraftonExtension){
+        const id = extension.modulePath
+            .substring(extension.modulePath.lastIndexOf("/")+1)
+            .split(".")[0]
+        const folder = extension.modulePath.substring(0,extension.modulePath.lastIndexOf("/"))
 
-    static async registerJsonFile(path: string){
-        return fetch(path).then(r => r.json()).then((j: object) => {
-            this.displayNames[j["id"]] = j["displayName"] 
+        if (extension.stylePath){
+            createEl("link", {
+                attribs: {
+                    id: id,
+                    rel: "stylesheet",
+                    type: "text/css",
+                    href: folder+"/"+extension.stylePath+(extension.stylePath.endsWith(".css") ? "" : ".css"),
+                    media: "all",
+                },
+                parent: document.head
+            })
+        }
+        const json = extension.jsonPath ? folder+"/"+extension.jsonPath : folder+"/"+id+".json"
+        Object.entries(extension.recipeMap).forEach(([id,recipe]) => this.recipeMap[id] = recipe)
+
+        if (extension.itemRendering){
+            Object.entries(extension.itemRendering).forEach(([id, render]) => Renderer.registerItemRenderer(id,render))
+        }
+
+        return fetch(json).then(r => r.json()).then((j: object) => {
+            this.displayNames[j["id"]] = j["name"]
             Object.entries(j["items"]).forEach(([key, value]: [string, Item]) => this.items[key] = value);
-            Object.entries(j["recipes"]).forEach(([key, value]:[string, NonSerialized]) => 
+            Object.entries(j["recipes"]).forEach(([key, value]:[string, NonSerialized]) =>
                 this.recipes[key] = new this.recipeMap[value["type"]](value["data"])
             )
         })
@@ -73,7 +103,8 @@ export default class RecipeRegistry {
     }
 
     static getAllItemIds(): string[] {
-        return Object.keys(this.items).sort((a,b) => a.localeCompare(b,'en',{numeric:true}))
+        return Object.keys(this.items)
+            //.sort((a,b) => a.localeCompare(b,'en',{numeric:true}))
     }
 
     static getAddonDisplayName(id: string) {
@@ -86,5 +117,9 @@ export default class RecipeRegistry {
 
     static getRecipesByResult(id: string){
         return Object.values(this.recipes).filter(r => r.results().includes(id))
+    }
+
+    static getRecipesByRecipeType(id: string){
+        return Object.values(this.recipes).filter(r => r instanceof this.recipeMap[id])
     }
 }

@@ -11,12 +11,12 @@
 }
 
 body {
-    margin: 0 50px;
+    margin: 0 10px;
     background: rgb(103, 103, 103);
 }
 
 body > * {
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 img, canvas {

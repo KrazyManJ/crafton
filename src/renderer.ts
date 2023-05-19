@@ -1,6 +1,6 @@
 import RecipeRegistry, { Item } from "./recipe-registry.js"
 import { createEl, minecraftColorsToHTML } from "./utils.js"
-import * as vanilla_renderer from "./item-rendering/vanilla-renderer.js"
+import ToolTip from "./tooltip.js"
 
 
 export interface ItemRenderer {
@@ -14,41 +14,8 @@ interface ItemRenderOptions {
 }
 
 export default class Renderer {
-    private static readonly TOOLTIP = document.getElementById("tooltip")
 
-    static {
-        window.onmousemove = (ev: MouseEvent) => {
-            if (this.TOOLTIP.hidden) return
-            const rect = this.TOOLTIP.getBoundingClientRect()
-            this.TOOLTIP.style.transform = `translate(
-                ${Math.min(ev.x,window.innerWidth-rect.width-50)}px,
-                ${Math.max(ev.y-rect.height,20)}px
-            )`
-        }
-
-    }
-
-    private static itemMouseOver(item: Item, id: string, categoryName: string){
-        this.TOOLTIP.hidden = false;
-        this.TOOLTIP.querySelector("div").innerHTML = minecraftColorsToHTML(item.name)
-        this.TOOLTIP.querySelector("p").innerHTML = minecraftColorsToHTML(item.lore ?? "")
-        this.TOOLTIP.querySelector("p").innerHTML += ((item.lore ?? "").length > 0 ? "\n" : "") + minecraftColorsToHTML("&9&o@"+categoryName+"\n&8"+id)
-    }
-
-    private static itemMouseLeave(){
-        this.TOOLTIP.hidden = true;
-    }
-
-    /* RENDERING */
-
-    private static readonly itemRenderers: Record<string,ItemRenderer> = {
-        "item": vanilla_renderer.ITEM,
-        "block": vanilla_renderer.BLOCK_LIKE_ITEM,
-        "slab": vanilla_renderer.BLOCK_LIKE_ITEM,
-        "stairs": vanilla_renderer.STAIRS,
-        "plate": vanilla_renderer.BLOCK_LIKE_ITEM,
-        "chest": vanilla_renderer.CHEST
-    }
+    private static readonly itemRenderers: Record<string,ItemRenderer> = {}
 
     static registerItemRenderer(id: string, renderer: ItemRenderer){
         this.itemRenderers[id] = renderer
@@ -58,8 +25,8 @@ export default class Renderer {
         if (!RecipeRegistry.getAllItemIds().includes(id)) throw new Error("This was not found")
         const item = RecipeRegistry.getItemById(id)
         const elem = document.createElement("div")
-        elem.onmouseenter = () => this.itemMouseOver(item,id,RecipeRegistry.getAddonDisplayName(id.split(":")[0]))
-        elem.onmouseleave = () => this.itemMouseLeave()
+        elem.onmouseenter = () => ToolTip.show(item,id,RecipeRegistry.getAddonDisplayName(id.split(":")[0]))
+        elem.onmouseleave = () => ToolTip.hide()
         elem.className = "mc-item-slot"
         if (options) {
             if (options.size) elem.setAttribute("style","--slot-size: "+options.size+"px")

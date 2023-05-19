@@ -49,3 +49,11 @@ export function createEl(tagName, options) {
     }
     return elem;
 }
+export function createItemRenderSides(item, map, ...sides) {
+    return sides.map(side => createEl("img", {
+        cls: side,
+        attribs: {
+            src: "data:image/png;base64," + (typeof item.img === "object" ? item.img[map[side]] : item.img)
+        }
+    }));
+}

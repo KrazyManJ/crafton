@@ -1,3 +1,5 @@
+import {Item} from "./recipe-registry";
+
 export function minecraftColorsToHTML(txt: string){
     const COLORS = {
         "0": "#000000", 
@@ -58,4 +60,13 @@ export function createEl<K extends keyof HTMLElementTagNameMap>(tagName: K, opti
         if (options.children) options.children.forEach(ch => elem.appendChild(ch))
     }
     return elem
+}
+
+export function createItemRenderSides(item: Item, map: Record<string,string>, ...sides: string[]): HTMLElement[] {
+    return sides.map(side => createEl("img",{
+        cls: side,
+        attribs: {
+            src: "data:image/png;base64,"+(typeof item.img === "object" ? item.img[map[side]] : item.img)
+        }
+    }))
 }

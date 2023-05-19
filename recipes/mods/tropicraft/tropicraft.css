@@ -1,0 +1,14 @@
+/**/
+
+.mc-item-slot.tropicraft\:roots .top-side {
+    clip-path: inset(37.5% 37.5% 37.5% 37.5%);
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27)) rotateZ(180deg);
+}
+.mc-item-slot.tropicraft\:roots .right-side {
+    clip-path: inset(0 37.5% 0 37.5%);
+    transform: translateZ(calc(var(--slot-size) * 0.27 * (4/16)));
+}
+.mc-item-slot.tropicraft\:roots .left-side {
+    clip-path: inset(0 37.5% 0 37.5%);
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27 * (4/16)));
+}

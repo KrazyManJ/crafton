@@ -1,5 +1,5 @@
-import Renderer from "../renderer.js";
-import { createEl } from "../utils.js";
+import Renderer from "../../../src/renderer.js";
+import { createEl } from "../../../src/utils.js";
 export default class ShapedRecipe {
     constructor(json) {
         this.result = json["result"];

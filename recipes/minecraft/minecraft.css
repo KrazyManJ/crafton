@@ -1,0 +1,128 @@
+/* BLOCK */
+
+.mc-item-slot.minecraft\:block .top-side {
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27)) rotateZ(180deg);
+}
+.mc-item-slot.minecraft\:block .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+}
+.mc-item-slot.minecraft\:block .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27));
+}
+
+/* SLAB */
+
+.mc-item-slot.minecraft\:slab .top-side {
+    transform: rotateX(90deg) rotateZ(180deg);
+}
+
+.mc-item-slot.minecraft\:slab :is(.right-side,.left-side){
+    clip-path: inset(50% 0 0 0);
+}
+
+.mc-item-slot.minecraft\:slab .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+}
+
+.mc-item-slot.minecraft\:slab .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27));
+}
+
+/* STAIRS */
+
+.mc-item-slot.minecraft\:stairs .top-side {
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27)) rotateZ(180deg);
+    clip-path: inset(0 50% 0 0);
+}
+
+.mc-item-slot.minecraft\:stairs .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+    clip-path: polygon(0 50%, 50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%);
+}
+.mc-item-slot.minecraft\:stairs .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27));
+    clip-path: inset(50% 0 0 0);
+}
+
+.mc-item-slot.minecraft\:stairs .mid-hor {
+    transform: rotateX(90deg) rotateZ(180deg);
+    clip-path: inset(0 0 0 50%);
+}
+
+.mc-item-slot.minecraft\:stairs .mid-vert {
+    transform: rotateY(-90deg);
+    clip-path: inset(0 0 50% 0);
+    filter: brightness(70%);
+}
+
+/* PLATE */
+
+.mc-item-slot.minecraft\:plate .top-side {
+    transform: rotateX(90deg) rotateZ(180deg);
+}
+
+.mc-item-slot.minecraft\:plate :is(.right-side,.left-side){
+    clip-path: inset(50% 0 30% 0);
+}
+
+.mc-item-slot.minecraft\:plate .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+}
+
+.mc-item-slot.minecraft\:plate .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27));
+}
+
+/* CHEST */
+
+.mc-item-slot.minecraft\:chest .top-side {
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27 * (14/16))) rotateZ(180deg);
+}
+.mc-item-slot.minecraft\:chest .right-side {
+    transform: translateZ(calc(var(--slot-size) * 0.27 * (14/16)));
+}
+.mc-item-slot.minecraft\:chest .left-side {
+    transform: rotateY(-90deg) translateZ(calc(var(--slot-size) * 0.27 * (14/16)));
+}
+
+.mc-item-slot.minecraft\:chest .lock-top {
+    clip-path: inset(0 0 68.75% 0);
+    transform: rotateX(90deg) translateZ(calc(var(--slot-size) * 0.27 * (6/16))) translateY(calc(var(--slot-size) * 0.27 * (22/16)));
+}
+.mc-item-slot.minecraft\:chest .lock-right {
+    clip-path: inset(31.25% 0 0 43.75%);
+    transform: translateZ(calc(var(--slot-size) * 0.27));
+}
+.mc-item-slot.minecraft\:chest .lock-left {
+    clip-path: inset(0 56.25% 0 0);
+    transform:
+            rotateY(-90deg)
+            translateX(calc(var(--slot-size) * 0.27 * (18/16)))
+            translateZ(calc(var(--slot-size) * 0.27 * (2/16)))
+}
+
+/* TRAPDOOR */
+
+.mc-item-slot.minecraft\:trapdoor .top-side {
+    transform:
+            rotateX(90deg)
+            rotateZ(180deg)
+            translateZ(calc(var(--slot-size) * -0.27*2*0.3))
+}
+
+.mc-item-slot.minecraft\:trapdoor :is(.right-side,.left-side){
+    clip-path: inset(0 0 81.25% 0);
+}
+
+.mc-item-slot.minecraft\:trapdoor .right-side {
+    transform:
+            translateZ(calc(var(--slot-size) * 0.27))
+            translateY(calc(var(--slot-size) * 0.27*2*0.8))
+}
+
+.mc-item-slot.minecraft\:trapdoor .left-side {
+    transform:
+            rotateY(-90deg)
+            translateZ(calc(var(--slot-size) * 0.27))
+            translateY(calc(var(--slot-size) * 0.27*2*0.8))
+}

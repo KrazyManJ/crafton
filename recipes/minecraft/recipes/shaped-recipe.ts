@@ -1,6 +1,7 @@
-import RecipeRegistry, { Recipe, ItemStack, Item } from "../recipe-registry.js"
-import Renderer from "../renderer.js"
-import { createEl } from "../utils.js"
+import {ItemStack, Recipe} from "../../../src/recipe-registry.js";
+import Renderer from "../../../src/renderer.js";
+import {createEl} from "../../../src/utils.js";
+
 
 declare type MatrixRow = [string | undefined, string | undefined, string | undefined]
 
